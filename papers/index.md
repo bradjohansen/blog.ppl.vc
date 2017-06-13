@@ -2,7 +2,7 @@
 layout: post
 title: Papers
 ---
-These are some of the papers which I worked on while at uni.<br><br>
+These are some of the papers and projects on which I worked in the last years.<br><br>
 
 Deep learning / Reinforcement learning:
 <ol>
