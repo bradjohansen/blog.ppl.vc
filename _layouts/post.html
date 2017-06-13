@@ -8,12 +8,7 @@
     {% include head.html %}
 
     <!-- HEADER IMAGE -->
-    <center>
-        <span class="main-header-image">
-            <a href="/"><img src="/images/header/header.png"></a>
-        </span>
-    </center>
-
+    <div style='width=100% !important; height=360px !important;' id='particles-js'></div>
     <!-- NAVIGATION -->
     <br><br>
     <center>
@@ -22,7 +17,7 @@
             <a href="/archives/">ARCHIVE</a>
             <a href="/tags/">TAGS</a>
             <a href="/about/">ABOUT</a>
-            <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+            <a href="/papers/">PAPERS</a>
         </span>
     </center> 
 </head>
@@ -73,5 +68,12 @@
             {% include footer.html %}
         </footer>
     </div>   
-</footer>  
+</footer>
+<script src="/assets/js/particles.min.js"></script>
+<script>
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', '/assets/js/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+</script>  
 </html>
