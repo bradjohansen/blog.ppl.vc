@@ -91,8 +91,3 @@ Indentation matters. Be sure the indent of the code block aligns with the first 
         
 3. Now you can do this.
 
-### GitHub Gist Embed
-
-An example of a Gist embed below.
-
-{% gist mmistakes/6589546 %}
