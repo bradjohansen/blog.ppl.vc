@@ -317,8 +317,8 @@ h1 {
 #particles-js > canvas {
 	
 	@media #{$small} {
-		width: 180px !important;
-		height: 180px !important;
+		width: 100% !important;
+		height: 100% !important;
 	}
 
 	@media #{$medium} {
