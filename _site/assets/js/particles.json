@@ -17,7 +17,7 @@
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 3
+        "nb_sides": 2
       },
       "image": {
         "src": "img/github.svg",
@@ -47,7 +47,7 @@
     },
     "line_linked": {
       "enable": true,
-      "distance": 600,
+      "distance": 500,
       "color": "#000",
       "opacity": 1.0,
       "width": 2
@@ -76,7 +76,7 @@
       },
       "onclick": {
         "enable": false,
-        "mode": "push"
+        "mode": "repulse"
       },
       "resize": true
     },

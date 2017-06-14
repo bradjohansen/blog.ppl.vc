@@ -311,3 +311,23 @@ h1 {
         font-size: 32px;
 	}
 }
+
+/*--- PARTICLES -------------------------------------------------------------*/
+
+#particles-js > canvas {
+	
+	@media #{$small} {
+		width: 180px !important;
+		height: 180px !important;
+	}
+
+	@media #{$medium} {
+		width: 260px !important;
+		height: 260px !important;
+	}
+
+	@media #{$large} {
+		width: 360px !important;
+		height: 360px !important;
+	}
+}
