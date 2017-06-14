@@ -75,7 +75,10 @@ pre {
 /*--- ABOUT SECTION (SOCIAL MEDIA) ------------------------------------------*/
 
 .personal-social-media {
-    word-spacing: 10px;
+    a {
+    	padding-right: 5px;
+    	padding-left: 5px;
+    }
     
     img:hover {
         opacity: 0.5;
@@ -140,13 +143,15 @@ svg:not(:root) {
     
     a{
         color: $base-color;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
     a:hover {
         color: $highlight-color;
     }
     
-    word-spacing: 20px;
+    
 }
 
 /*--- TAGS ------------------------------------------------------------------*/
@@ -165,7 +170,7 @@ svg:not(:root) {
 
 /*--- GLOBAL TRANSITION -----------------------------------------------------*/
 
-b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a {
+b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, path {
 	transition: all 0.2s ease;
 }
 
@@ -328,4 +333,19 @@ h1 {
 		width: 360px !important;
 		height: 360px !important;
 	}
+}
+
+/*--- SVG -------------------------------------------------------------------*/
+
+.svg {
+	height: 30px !important;
+	width: 30px !important;
+}
+
+.svg path {
+	fill: $base-color;
+}
+
+.svg:hover path {
+	fill: $highlight-color;
 }

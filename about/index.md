@@ -23,6 +23,28 @@ The purpose of this website is to leave a trace of the many ideas that inhabit m
 </p>
 
 <center>
+    <span class='personal-social-media'>
+        <a target="_blank" href="https://github.com/danielegrattarola">
+            <img class="svg" src="/assets/icons/github.svg" width="30" height="30">
+        </a>
+        <a target="_blank" href="https://kaggle.com/danielegrattarola">
+            <img class="svg" src="/assets/icons/kaggle.svg" width="30" height="30">
+        </a>
+        <a target="_blank" href="https://linkedin.com/in/danielegrattarola">
+            <img class="svg" src="/assets/icons/linkedin.svg" width="30" height="30">
+        </a>
+        <a target="_blank" href="https://twitter.com/riceasphait">
+            <img class="svg" src="/assets/icons/twitter.svg" width="30" height="30">
+        </a>
+        <a target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}">
+            <img class="svg" src="/assets/icons/rss.svg" width="30" height="30">
+        </a>
+    </span>
+</center>
+
+<br>
+
+<center>
     <div class="photoset-grid-custom" data-layout="121">
         <img src="/images/about/1.jpg">
         <img src="/images/about/2.jpg">
@@ -31,6 +53,8 @@ The purpose of this website is to leave a trace of the many ideas that inhabit m
     </div>
 </center>
 
+
+<!-- PHOTOSET GRID -->
 <script src="/assets/js/jquery.photoset-grid.js"></script>
 
 <script type="text/javascript">
@@ -53,3 +77,38 @@ The purpose of this website is to leave a trace of the many ideas that inhabit m
 });
 </script>
 
+<!-- SVG-->
+<script type="text/javascript">
+/*
+ * Replace all SVG images with inline SVG
+ */
+jQuery('img.svg').each(function(){
+    var $img = jQuery(this);
+    var imgID = $img.attr('id');
+    var imgClass = $img.attr('class');
+    var imgURL = $img.attr('src');
+
+    jQuery.get(imgURL, function(data) {
+        // Get the SVG tag, ignore the rest
+        var $svg = jQuery(data).find('svg');
+
+        // Add replaced image's ID to the new SVG
+        if(typeof imgID !== 'undefined') {
+            $svg = $svg.attr('id', imgID);
+        }
+        // Add replaced image's classes to the new SVG
+        if(typeof imgClass !== 'undefined') {
+            $svg = $svg.attr('class', imgClass+' replaced-svg');
+        }
+
+        // Remove any invalid XML tags as per http://validator.w3.org
+        $svg = $svg.removeAttr('xmlns:a');
+
+        // Replace image with new SVG
+        $img.replaceWith($svg);
+
+    }, 'xml');
+
+});
+
+</script>

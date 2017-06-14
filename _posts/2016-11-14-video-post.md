@@ -5,6 +5,9 @@ title: A Video Post
 tags: [sample post, video]
 date-string: NOVEMBER 14, 2016
 ---
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="_/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
+
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EqAnYPiZiNA" frameborder="0" allowfullscreen></iframe>
 </center>
@@ -14,3 +17,12 @@ Video embeds are responsive and scale with the width of the main content block w
 ```html
 <iframe width="560" height="315" src="//www.youtube.com/embed/SU3kYxJmWuQ" frameborder="0"></iframe>
 ```
+
+<!-- FITVIDS -->
+<script src="/assets/js/jquery.fitvids.js"></script>
+<script>
+  $(document).ready(function(){
+    // Target your .container, .wrapper, .post, etc.
+    $(".entry-content").fitVids();
+  });
+</script>

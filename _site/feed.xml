@@ -3,10 +3,10 @@
   <channel>
     <title>Daniele Grattarola</title>
     <description>A blog about AI, reccommendation systems, and whatever comes to my mind...</description>
-    <link>http://0.0.0.0:4000/</link>
+    <link>http://localhost:4000/</link>
     <atom:link href="nathanrooy.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Jun 2017 15:42:04 +0200</pubDate>
-    <lastBuildDate>Wed, 14 Jun 2017 15:42:04 +0200</lastBuildDate>
+    <pubDate>Wed, 14 Jun 2017 19:01:11 +0200</pubDate>
+    <lastBuildDate>Wed, 14 Jun 2017 19:01:11 +0200</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
       
     
@@ -30,7 +30,7 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, test link adipiscing elit. &lt;strong&gt;This is strong&lt;/strong&gt;. Nullam dignissim convallis est. Quisque aliquam.&lt;/p&gt;
 
-&lt;p class=&quot;image-right&quot;&gt;&lt;img src=&quot;http://0.0.0.0:4000/images/3953273590_704e3899d5_m.jpg&quot; alt=&quot;Smithsonian Image&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;image-right&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/3953273590_704e3899d5_m.jpg&quot; alt=&quot;Smithsonian Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;This is emphasized&lt;/em&gt;. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H&lt;sub&gt;2&lt;/sub&gt;O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times &lt;cite&gt;(That’s a citation)&lt;/cite&gt;. &lt;u&gt;Underline&lt;/u&gt;. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.&lt;/p&gt;
 
@@ -327,7 +327,11 @@
     
     <item>
         <title>A Video Post</title>
-        <description>&lt;center&gt;
+        <description>&lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;window.jQuery || document.write('&lt;script src=&quot;_/js/libs/jquery-1.9.1.min.js&quot;&gt;&lt;\/script&gt;')&lt;/script&gt;
+
+&lt;center&gt;
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/EqAnYPiZiNA&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/center&gt;
 
@@ -336,6 +340,17 @@
 &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;560&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;315&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;//www.youtube.com/embed/SU3kYxJmWuQ&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;frameborder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;!-- FITVIDS --&gt;
+&lt;script src=&quot;/assets/js/jquery.fitvids.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  $(document).ready(function(){
+    // Target your .container, .wrapper, .post, etc.
+    $(&quot;.entry-content&quot;).fitVids();
+  });
+&lt;/script&gt;
+
 </description>
         <pubDate>Mon, 14 Nov 2016 00:00:00 +0100</pubDate>
         
