@@ -187,12 +187,7 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
 
 .main-header-image {
     img {
-        @media #{$medium} {
-            margin-left: 20px;
-			margin-right: 20px;
-		}
-
-		@media #{$large} {
+        @media #{$large} {
 			max-width: $column-width;
 		}
     }
