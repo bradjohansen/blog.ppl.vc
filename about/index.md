@@ -39,6 +39,7 @@ My second home is in Ibiza, where I go every summer to get lost in nature and fi
             <img class="svg" src="/assets/icons/rss.svg" width="30" height="30">
         </a>
     </span>
+    <br><span>BTC address: 1KLyYmceVcs1kXWkUcwrQBGrZymc85scXa</span>
 </center>
 
 <br>
