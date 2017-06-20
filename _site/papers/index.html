@@ -52,7 +52,14 @@
 
 
     <!-- HEADER IMAGE -->
-    <center id='particles-js'></center>
+    <center>
+        <span class="main-header-image">
+            <a href="/"><img src="/images/header/header.jpg"></a>
+        </span>
+    </center>
+    <center id='header-caption-container'>
+        <span id='header-caption'><br>by DANIELE GRATTAROLA</span>
+    </center>
 
     <!-- NAVIGATION -->
     <br><br>
@@ -63,8 +70,6 @@
             <a href="/papers/">PAPERS</a>
             <a href="/about/">ABOUT</a>
         </span>
-        <br><br>
-        <span>by Daniele Grattarola</span>
     </center> 
 </head>
 
@@ -86,8 +91,8 @@
 
 Deep learning / Reinforcement learning:
 <ul>
-<li><a target="_blank" href="/assets/papers/Learning to play Snake with Deep Q-Learning.pdf">Playing Snake with Deep Q-Learning - Project report (2016)</a></li>
-<li><a target="_blank" href="/assets/papers/Estimating performance of Hadoop systems with deep learning.pdf">Estimating Performance of Hadoop Systems with Deep Networks - Project report (2016)</a></li>
+<li class='entry-title'><a target="_blank" href="/assets/papers/Learning to play Snake with Deep Q-Learning.pdf">Playing Snake with Deep Q-Learning - Project report (2016)</a></li>
+<li class='entry-title'><a target="_blank" href="/assets/papers/Estimating performance of Hadoop systems with deep learning.pdf">Estimating Performance of Hadoop Systems with Deep Networks - Project report (2016)</a></li>
 </ul>
             </div>  
 
@@ -121,15 +126,6 @@ Deep learning / Reinforcement learning:
 
         </footer>
     </div>   
-</footer>
-
-<!-- PARTICLE JS -->
-<script src="/assets/js/particles.min.js"></script>
-<script>
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', '/assets/js/particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});
-</script>  
+</footer> 
 
 </html>

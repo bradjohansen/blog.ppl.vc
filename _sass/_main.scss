@@ -5,7 +5,7 @@ a {
 	color: $link-color; 
 
 	&:visited { 
-		color: lighten($link-color, 20); 
+		color: $link-color; 
 	}
 
 	&:hover { 
@@ -13,8 +13,8 @@ a {
 	}
 
 	&:focus { 
-		outline: thin dotted; 
-		color: darken($link-color, 20);
+		outline: none; 
+		color: $link-color;
 	}
 
 	&:hover, 
@@ -343,9 +343,24 @@ h1 {
 }
 
 .svg path {
-	fill: $base-color;
+	fill: $text-color;
 }
 
 .svg:hover path {
-	fill: $highlight-color;
+	@media #{$large} {
+		fill: $highlight-color;
+	}
+}
+
+/*--- HEADER ----------------------------------------------------------------*/
+
+#header-caption-container {
+	margin-right: 20px; 
+	margin-left: 20px;
+}
+
+#header-caption {
+	font-weight: 100; 
+	letter-spacing: 10px;
+	margin-right: -10px;
 }

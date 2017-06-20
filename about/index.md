@@ -18,17 +18,16 @@ I enjoy reading, biking, playing the ukulele and traveling the world whenever I 
 My second home is in Ibiza, where I go every summer to get lost in nature and find myself again.
 </p>
 
-<p>
-The purpose of this website is to leave a trace of the many ideas that inhabit my mind, in the hope of inspiring other people to think and share new amazing ideas so that we can all work together towards a better future.
-</p>
+<span>The purpose of this website is to leave a trace of my ideas, my work, and my experiences.</span>
+
+<br>
+<br>
 
 <center>
     <span class='personal-social-media'>
         <a target="_blank" href="https://github.com/danielegrattarola">
             <img class="svg" src="/assets/icons/github.svg" width="30" height="30">
         </a>
-        <a target="_blank" href="https://kaggle.com/danielegrattarola">
-            <img class="svg" src="/assets/icons/kaggle.svg" width="30" height="30">
         </a>
         <a target="_blank" href="https://linkedin.com/in/danielegrattarola">
             <img class="svg" src="/assets/icons/linkedin.svg" width="30" height="30">
@@ -36,7 +35,7 @@ The purpose of this website is to leave a trace of the many ideas that inhabit m
         <a target="_blank" href="https://twitter.com/riceasphait">
             <img class="svg" src="/assets/icons/twitter.svg" width="30" height="30">
         </a>
-        <a target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}">
+        <a target="_blank" href="/feed.xml">
             <img class="svg" src="/assets/icons/rss.svg" width="30" height="30">
         </a>
     </span>

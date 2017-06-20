@@ -52,7 +52,14 @@
 
 
     <!-- HEADER IMAGE -->
-    <center id='particles-js'></center>
+    <center>
+        <span class="main-header-image">
+            <a href="/"><img src="/images/header/header.jpg"></a>
+        </span>
+    </center>
+    <center id='header-caption-container'>
+        <span id='header-caption'><br>by DANIELE GRATTAROLA</span>
+    </center>
 
     <!-- NAVIGATION -->
     <br><br>
@@ -63,8 +70,6 @@
             <a href="/papers/">PAPERS</a>
             <a href="/about/">ABOUT</a>
         </span>
-        <br><br>
-        <span>by Daniele Grattarola</span>
     </center> 
 </head>
 
@@ -158,15 +163,6 @@
 
         </footer>
     </div>   
-</footer>
-
-<!-- PARTICLE JS -->
-<script src="/assets/js/particles.min.js"></script>
-<script>
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', '/assets/js/particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});
-</script>  
+</footer> 
 
 </html>
