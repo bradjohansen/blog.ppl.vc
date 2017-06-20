@@ -354,19 +354,16 @@ h1 {
 
 /*--- HEADER ----------------------------------------------------------------*/
 
-#header-caption-container {
-		@media #{$medium} {
-
-	}
-}
-
 #header-caption {
 	font-size: 14px;
 	font-weight: 100; 
 	letter-spacing: 5px;
-	margin-right: -10px;
+	margin-right: -5px;
+	display: block;
+	margin-top: 1em !important;
 	@media #{$medium} {
 		font-size: 0px + $doc-font-size;
 		letter-spacing: 10px;
+		margin-right: -10px;
 	}
 }
