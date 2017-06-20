@@ -1,1 +1,3 @@
 workdir/
+images/header/*
+!images/header/header.jpg
