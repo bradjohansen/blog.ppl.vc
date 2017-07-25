@@ -6,8 +6,32 @@
    
 <head>
     {% include head.html %}
-
-    <!-- HEADER IMAGE -->
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="_/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
+    <link rel="stylesheet" id="pagestyle" type="text/css" href="{{ site.url }}/assets/css/slicknav.min.css">
+    <script src="{{ site.url }}/assets/js/jquery.slicknav.min.js"></script>
+    
+    <div class="navbar">
+		<a class="brand" href="/">DANIELEGRATTAROLA°</a>
+		<div id='menu'>
+			<a href="/">Home</a>
+            <a href="/archives/" >Archive</a>
+			<a href="/papers/" >Papers</a>
+			<a href="/about/" class="current">About</a>
+		</div>
+	</div>
+    
+    <script>
+		$(function(){
+			$('#menu').slicknav({
+				label: '',
+				brand: '<a class="brand" href="/">DANIELEGRATTAROLA</a>'
+			});
+		});
+	</script>
+    
+    <!-- HEADER IMAGE>
     <center>
         <span class="main-header-image">
             <a href="/"><img src="/images/header/header.jpg"></a>
@@ -15,9 +39,9 @@
     </center>
     <center id='header-caption-container'>
         <span id='header-caption'>by DANIELE GRATTAROLA</span>
-    </center>
+    </center-->
 
-    <!-- NAVIGATION -->
+    <!-- NAVIGATION>
     <br><br>
     <center>
         <span class="navigation-bar">
@@ -26,7 +50,7 @@
             <a href="/papers/">PAPERS</a>
             <a href="/about/">ABOUT</a>
         </span>
-    </center> 
+    </center--> 
 </head>
 
 <!-- BODY -->

@@ -2,8 +2,6 @@
 layout: post
 title: About
 ---
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="_/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
 
 <p>
 I am a Master's Student of Computer Science and Engineering at Politecnico di Milano, with a specialization and a passion for AI, machine learning, and recommendation systems. 

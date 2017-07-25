@@ -296,7 +296,7 @@ body {
 	padding: 0;
 	width: 100%;
 	background-color: $body-color;
-    margin-top: 0px + $doc-line-height;
+    // margin-top: 0px + $doc-line-height;
     font-size: 0px + $doc-font-size;
 }
 
@@ -363,3 +363,70 @@ h1 {
 		margin-right: -10px;
 	}
 }
+
+/*---- NAVBAR --------------------------------------------------------------*/
+.brand{
+	float: left;
+	font-weight: 100; 
+	font-size: 20;
+	letter-spacing: 7px;
+}
+
+.navbar {
+	background: #fff;
+	box-shadow: 0 0 0 0, 0 3px 6px rgba($base-color,0.1);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 3%;
+	padding-left: 3%;
+	text-align: right;
+}
+.navbar a{
+	font-weight: 100; 
+	text-decoration: none;
+	padding-right: 1%;
+	padding-left: 1%;
+}
+
+/*--Slicknav--*/
+.slicknav_menu {
+	display: none;
+}
+
+@media (max-width: 40em) {
+	#menu {
+		display: none;
+	}
+	.navbar {
+		display: none !important;
+	}
+	.slicknav_menu {
+		display: block !important;
+		background: #fff !important;
+	}
+	
+	.slicknav_nav {
+		background: #fff !important;
+		color: $base-color !important;
+		text-align: right !important;
+	}
+	.slicknav_nav a{
+		color: $base-color !important;
+		text-decoration: none !important;
+	}
+	.slicknav_nav a:hover {
+		background: none !important;
+		color: $highlight-color !important;
+	}
+	.slicknav_btn {
+		margin: 8px 5px 6px !important;
+		background: none !important;
+	}
+	.slicknav_icon-bar {
+	    background: $base-color !important;
+	}
+	.slicknav_icon:hover .slicknav_icon-bar {
+		background: $highlight-color !important;
+	}
+}
+

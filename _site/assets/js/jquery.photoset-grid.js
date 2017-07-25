@@ -285,7 +285,7 @@
             }
 
           }
-          resizePhotosetGrid();
+          $(window).load(function() { resizePhotosetGrid(); });
 
           $(window).on("resize", function() {
             resizePhotosetGrid();
