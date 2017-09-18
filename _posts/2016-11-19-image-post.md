@@ -5,8 +5,6 @@ title: Image Post
 tags: [sample post]
 date-string: NOVEMBER 19, 2016
 ---
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="_/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
 
 Lorem ipsum dolor sit amet, interdum fermentum arcu, ipsum venenatis curabitur dis. Morbi imperdiet pharetra adipiscing posuere morbi. Aliquam dictum ut nisl wisi quis fermentum, quam lectus amet, eu congue tincidunt. Eget sollicitudin amet lectus at duis vitae, sed id vitae, amet ultricies, eget proin id. Gravida cras consequat, sem elit suscipit, volutpat dui congue, quisque amet ac sit ornare aliquet, sem nec eget felis varius lacus metus. Eros eget viverra habitasse non vitae, fusce euismod commodo pellentesque nonummy sit, ultricies ullamcorper ut neque, egestas sem quisque hendrerit.
 

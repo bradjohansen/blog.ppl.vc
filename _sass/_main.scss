@@ -1,3 +1,21 @@
+/*--- BODY ------------------------------------------------------------------*/
+
+body {
+    font-family: $base-font;
+    color: $text-color;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: $body-color;
+    font-size: 0px + $doc-font-size;
+}
+
+/*--- GLOBAL TRANSITION -----------------------------------------------------*/
+
+b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, path {
+	transition: all 0.3s ease;
+}
+
 /*--- LINKS -----------------------------------------------------------------*/
 
 a {  
@@ -20,6 +38,92 @@ a {
 	&:hover, 
 	&:active { 
 		outline: 0; 
+	}
+}
+
+/*---- NAVBAR --------------------------------------------------------------*/
+.brand{
+	float: left;
+	font-size: 20;
+	letter-spacing: 7px;
+}
+
+.navbar {
+	background: $navbar-dark;
+	box-shadow: 0 0 0 0, 0 3px 6px rgba($navbar-dark,0.1);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 3%;
+	padding-left: 3%;
+	text-align: right;
+}
+
+.navbar{
+	a {
+	    color: $navbar-light;
+		text-decoration: none;
+		padding-right: 1%;
+		padding-left: 1%;
+	} 
+
+	a:visited {
+		color: $navbar-light;
+	}
+
+	a:hover {
+		color: $highlight-color;
+	}
+}
+
+/*--Slicknav--*/
+.slicknav_menu {
+	display: none;
+}
+
+@media (max-width: 40em) {
+	#menu {
+		display: none;
+	}
+
+	.navbar {
+		display: none !important;
+	}
+
+	.slicknav_menu {
+		display: block !important;
+		background: $navbar-dark !important;
+
+		a {
+			color: $navbar-light !important;
+			text-decoration: none !important;
+		}
+
+		a:visited {
+			color: $navbar-light !important;
+			background: none !important;
+		}
+
+		a:hover {
+			color: $highlight-color !important;
+			background: none !important;
+		}
+	}
+	
+	.slicknav_nav {
+		background: none !important;
+		color: $navbar-light !important;
+		text-align: right !important;
+	}
+	
+	.slicknav_btn {
+		margin: 8px 5px 6px !important;
+		background: none !important;
+	}
+	.slicknav_icon-bar {
+	    background: $navbar-light !important;
+	}
+	.slicknav_icon:hover .slicknav_icon-bar {
+		background: $highlight-color !important;
 	}
 }
 
@@ -137,23 +241,6 @@ svg:not(:root) {
     color: #006699;
 }
 
-/*--- NAVIGATION BAR --------------------------------------------------------*/
-
-.navigation-bar {
-    
-    a{
-        color: $base-color;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    
-    a:hover {
-        color: $highlight-color;
-    }
-    
-    
-}
-
 /*--- TAGS ------------------------------------------------------------------*/
 
 .inline-tags {
@@ -168,12 +255,6 @@ svg:not(:root) {
     }
 }
 
-/*--- GLOBAL TRANSITION -----------------------------------------------------*/
-
-b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, path {
-	transition: all 0.2s ease;
-}
-
 /*--- MAIN CONTENT ----------------------------------------------------------*/
 
 .entry-content {
@@ -181,19 +262,11 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
     line-height: 26px;
 }
 
-.entry-title {
-    font-weight: 100;
-}
-
 .main-header-image {
     img {
         @media #{$large} {
 			max-width: $column-width;
 		}
-    }
-    
-    img:hover {
-        // opacity: 0.8;
     }
 }
 
@@ -223,7 +296,7 @@ header .entry-meta {
 
 #post-index {
 	#main {
-		margin: 40px 2px 20px 2px;
+		margin: 0px 0px 20px 0px;
 
 		@media #{$medium} {
 			margin-left: 20px;
@@ -287,18 +360,6 @@ header .entry-meta {
 	text-align: center;
 }
 
-/*--- BODY ------------------------------------------------------------------*/
-
-body {
-    font-family: $base-font;
-    color: $text-color;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	background-color: $body-color;
-    // margin-top: 0px + $doc-line-height;
-    font-size: 0px + $doc-font-size;
-}
 
 /*--- HEADINGS --------------------------------------------------------------*/
 
@@ -309,24 +370,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	@media #{$medium} {
         font-size: 32px;
-	}
-}
-
-/*--- PARTICLES -------------------------------------------------------------*/
-
-#particles-js > canvas {
-	
-	width: 50% !important;
-	height: 180px !important;
-	
-	@media #{$medium} {
-		width: 260px !important;
-		height: 260px !important;
-	}
-
-	@media #{$large} {
-		width: 360px !important;
-		height: 360px !important;
 	}
 }
 
@@ -361,72 +404,6 @@ h1 {
 		font-size: 0px + $doc-font-size;
 		letter-spacing: 10px;
 		margin-right: -10px;
-	}
-}
-
-/*---- NAVBAR --------------------------------------------------------------*/
-.brand{
-	float: left;
-	font-weight: 100; 
-	font-size: 20;
-	letter-spacing: 7px;
-}
-
-.navbar {
-	background: #fff;
-	box-shadow: 0 0 0 0, 0 3px 6px rgba($base-color,0.1);
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-right: 3%;
-	padding-left: 3%;
-	text-align: right;
-}
-.navbar a{
-	font-weight: 100; 
-	text-decoration: none;
-	padding-right: 1%;
-	padding-left: 1%;
-}
-
-/*--Slicknav--*/
-.slicknav_menu {
-	display: none;
-}
-
-@media (max-width: 40em) {
-	#menu {
-		display: none;
-	}
-	.navbar {
-		display: none !important;
-	}
-	.slicknav_menu {
-		display: block !important;
-		background: #fff !important;
-	}
-	
-	.slicknav_nav {
-		background: #fff !important;
-		color: $base-color !important;
-		text-align: right !important;
-	}
-	.slicknav_nav a{
-		color: $base-color !important;
-		text-decoration: none !important;
-	}
-	.slicknav_nav a:hover {
-		background: none !important;
-		color: $highlight-color !important;
-	}
-	.slicknav_btn {
-		margin: 8px 5px 6px !important;
-		background: none !important;
-	}
-	.slicknav_icon-bar {
-	    background: $base-color !important;
-	}
-	.slicknav_icon:hover .slicknav_icon-bar {
-		background: $highlight-color !important;
 	}
 }
 

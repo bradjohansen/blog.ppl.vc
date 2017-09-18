@@ -5,8 +5,6 @@ title: A Video Post
 tags: [sample post, video]
 date-string: NOVEMBER 14, 2016
 ---
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="_/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
 
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EqAnYPiZiNA" frameborder="0" allowfullscreen></iframe>
