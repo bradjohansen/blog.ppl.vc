@@ -4,15 +4,17 @@ title: About
 ---
 
 <p>
-I am a Master's Student of Computer Science and Engineering at Politecnico di Milano, with a specialization and a passion for AI, machine learning, and recommendation systems. 
+I am a PhD Student of Computer Science at Università della Svizzera Italiana 
+(USI), graduated in Computer Science and Engineering at Politecnico di Milano in
+ 2017.
+My work mostly focuses on deep reinforcement learning and high-performance 
+recommendation systems.
 </p>
 
 <p>
-My work mostly focuses on deep reinforcement learning and high performance recommendation systems, but I try to keep my horizon as wide as possible.
-I enjoy reading, biking, playing the ukulele and traveling the world whenever I have the chance. 
-</p>
-
-<p>
+I am an avid reader, bicycle revolution supporter, ukulele player, red cat owner, 
+and worldwide traveler. 
+<br>
 My second home is in Ibiza, where I go every summer to get lost in nature and find myself again.
 </p>
 
@@ -23,15 +25,15 @@ My second home is in Ibiza, where I go every summer to get lost in nature and fi
 
 <center>
     <span class='personal-social-media'>
+        <a target="_blank" href="https://twitter.com/riceasphait">
+            <img class="svg" src="/assets/icons/twitter.svg" width="30" height="30">
+        </a>
         <a target="_blank" href="https://github.com/danielegrattarola">
             <img class="svg" src="/assets/icons/github.svg" width="30" height="30">
         </a>
         </a>
         <a target="_blank" href="https://linkedin.com/in/danielegrattarola">
             <img class="svg" src="/assets/icons/linkedin.svg" width="30" height="30">
-        </a>
-        <a target="_blank" href="https://twitter.com/riceasphait">
-            <img class="svg" src="/assets/icons/twitter.svg" width="30" height="30">
         </a>
         <a target="_blank" href="/feed.xml">
             <img class="svg" src="/assets/icons/rss.svg" width="30" height="30">
