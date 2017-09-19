@@ -2,3 +2,4 @@ workdir/
 images/header/*
 !images/header/header.jpg
 other/
+sitemap.xml
