@@ -87,9 +87,10 @@ solved).
 I stop here with the examples, because it's out of my capabilities to summarize
 all possible scenarios, especially when we consider that the Fermi paradox has 
 inspired fifty years of debate. 
-And if we think about this debate, we see that "alien civilization", "AI", or 
-"God" can all be used interchangeably without changing the essence of the 
-discourse: why, if _they_ exist, are they not manifest?
+And if we think about this debate, we see that it extends back in the ages, 
+that "alien civilization", "AI", or "God" can be, and have been, used 
+interchangeably without changing the essence of the discourse: why, if _they_ 
+exist, are they not manifest?
 
 As hard as we try to rationalize this question, we perfectly know that there
 are only two possible outcomes, that we are looking for a black swan that we'll
@@ -108,50 +109,4 @@ us back in our quiet neighbourhood of probable but unverifiable truths.
 However, when considering the practically null amout of time that constitutes our
 lives, a question may come to one's mind: is it closer to human nature to 
 think of a God, or to seek one out?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
