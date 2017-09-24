@@ -7,8 +7,8 @@ title: About
 I am a PhD Student of Computer Science at Università della Svizzera Italiana 
 (USI), graduated in Computer Science and Engineering at Politecnico di Milano in
  2017.
-My work mostly focuses on deep reinforcement learning and high-performance 
-recommendation systems.
+My work mostly focuses on deep learning, reinforcement learning, and recommender 
+systems.
 </p>
 
 <p>
@@ -39,7 +39,8 @@ My second home is in Ibiza, where I go every summer to get lost in nature and fi
             <img class="svg" src="/assets/icons/rss.svg" width="30" height="30">
         </a>
     </span>
-    <br><span style='font-size: 14px;'>BTC address: 1KLyYmceVcs1kXWkUcwrQBGrZymc85scXa</span>
+    <br><a target="_blank" href="/files/Daniele_Grattarola_resume.pdf">Résumé</a>
+    <br><span style='font-size: 14px;'>BTC address: <a href="bitcoin:1KLyYmceVcs1kXWkUcwrQBGrZymc85scXa">1KLyYmceVcs1kXWkUcwrQBGrZymc85scXa</a></span>
 </center>
 
 <br>
