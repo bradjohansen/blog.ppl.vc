@@ -6,7 +6,7 @@ This is a collection of written accounts for some of the projects I've worked on
  in the last years. Publications are followed by their DOI. <br><br>
 
 <center>
-    <img src="../images/header/projects.png" alt="Glitch art #1 (by Daniele Grattarola)"/>
+    <img src="/images/header/projects.png" alt="Glitch art #1 (by Daniele Grattarola)"/>
 </center>
 
 <br>
