@@ -2,7 +2,7 @@ title:            Daniele Grattarola
 description:      A blog about AI, recommender systems, and other interesting stuff.
        
 
-future:      false  # publish future dated posts --  true, false (default) 
+future:      true  # publish future dated posts --  true, false (default) 
 highlighter: rouge
 markdown:    kramdown
 gems:
