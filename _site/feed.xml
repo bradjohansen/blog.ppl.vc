@@ -5,8 +5,8 @@
     <description>A blog about AI, recommender systems, and other interesting stuff.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="nathanrooy.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 25 Sep 2017 00:06:16 +0200</pubDate>
-    <lastBuildDate>Mon, 25 Sep 2017 00:06:16 +0200</lastBuildDate>
+    <pubDate>Mon, 25 Sep 2017 00:17:14 +0200</pubDate>
+    <lastBuildDate>Mon, 25 Sep 2017 00:17:14 +0200</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
       
     
@@ -35,21 +35,20 @@ We can also go back to our comfy evening reads, which in my case mean Hofstader�
 &lt;em&gt;GEB&lt;/em&gt; (for the sixth time or so) and Nick Bostrom’s &lt;em&gt;Superintelligence&lt;/em&gt;, 
 while listening to the sound of the falling rain.
 And then, when the words are stirring inside your head, and the rain has
-flushed the world clean, and the only sound you can hear is the quiet whirring
-of the GPU fan, while it’s training that 10-layer net that you’ve been working 
-on; only then, you might find yourself asking the question: &lt;em&gt;where the hell is superintelligence?&lt;/em&gt;&lt;/p&gt;
+flushed the world clean, and the only sound you can hear is the quiet whir
+of the GPU fan, while it’s training that 10-layer net that you’ve been recently
+working on; only then, you might find yourself asking the question: &lt;em&gt;where the hell is superintelligence?&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;That’s a reasonable question, isn’t it? Just look at all the informed opinions 
-of better, wiser people than me on the subject. They may disagree on its nature, 
-but no one (&lt;em&gt;no one&lt;/em&gt;) disagrees that AGI will have an almost infinite growth 
-rate.&lt;br /&gt;
+of the better, wiser people than me that I cited above on the subject. 
+They may disagree on its nature, but no one (&lt;em&gt;no one&lt;/em&gt;) disagrees that AGI will 
+have an almost infinite growth rate.&lt;br /&gt;
 Go back to the second sentence of this post, and replace “interstellar travel”
 with “artificial intelligence” to have an idea of what that may look like. 
 And we’re not talking of a simple Kardashev scale boost; a superintelligence would
 be well aware of its physical limitations, so we’d likely be looking at an
 end-of-the-galaxy scenario, with all available matter being converted to 
-computing infrastructure, &lt;em&gt;à la&lt;/em&gt; Charles Stross (Spoiler alert: &lt;em&gt;Accelerando&lt;/em&gt; 
-is in my top 3 favourite sci-fi novels, ever).&lt;/p&gt;
+computing infrastructure, &lt;em&gt;à la&lt;/em&gt; Charles Stross.&lt;/p&gt;
 
 &lt;p&gt;A phenomenon so powerful that its mere exisistence would change the scale of 
 reference for every other phenomena in the universe, something so good at self

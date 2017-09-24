@@ -29,21 +29,20 @@ We can also go back to our comfy evening reads, which in my case mean Hofstader'
 _GEB_ (for the sixth time or so) and Nick Bostrom's _Superintelligence_, 
 while listening to the sound of the falling rain.
 And then, when the words are stirring inside your head, and the rain has
-flushed the world clean, and the only sound you can hear is the quiet whirring
-of the GPU fan, while it's training that 10-layer net that you've been working 
-on; only then, you might find yourself asking the question: _where the hell is superintelligence?_
+flushed the world clean, and the only sound you can hear is the quiet whir
+of the GPU fan, while it's training that 10-layer net that you've been recently
+working on; only then, you might find yourself asking the question: _where the hell is superintelligence?_
 
 That's a reasonable question, isn't it? Just look at all the informed opinions 
-of better, wiser people than me on the subject. They may disagree on its nature, 
-but no one (_no one_) disagrees that AGI will have an almost infinite growth 
-rate.  
+of the better, wiser people than me that I cited above on the subject. 
+They may disagree on its nature, but no one (_no one_) disagrees that AGI will 
+have an almost infinite growth rate.  
 Go back to the second sentence of this post, and replace "interstellar travel"
 with "artificial intelligence" to have an idea of what that may look like. 
 And we're not talking of a simple Kardashev scale boost; a superintelligence would
 be well aware of its physical limitations, so we'd likely be looking at an
 end-of-the-galaxy scenario, with all available matter being converted to 
-computing infrastructure, _à la_ Charles Stross (Spoiler alert: _Accelerando_ 
-is in my top 3 favourite sci-fi novels, ever).  
+computing infrastructure, _à la_ Charles Stross.  
 
 A phenomenon so powerful that its mere exisistence would change the scale of 
 reference for every other phenomena in the universe, something so good at self
