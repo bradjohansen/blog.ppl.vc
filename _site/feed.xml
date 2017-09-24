@@ -5,14 +5,135 @@
     <description>A blog about AI, recommender systems, and other interesting stuff.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="nathanrooy.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 24 Sep 2017 18:16:29 +0200</pubDate>
-    <lastBuildDate>Sun, 24 Sep 2017 18:16:29 +0200</lastBuildDate>
+    <pubDate>Mon, 25 Sep 2017 00:06:16 +0200</pubDate>
+    <lastBuildDate>Mon, 25 Sep 2017 00:06:16 +0200</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
       
     
     <item>
+        <title>The Fermi's Paradox of Superintelligence</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/2017-09-25/seti.jpg&quot; alt=&quot;The Allen Telescope Array (Public domain)&quot; class=&quot;full-width&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Attirbuted to Enrico Fermi as a back-of-the-envelope astrobiological philosphy 
+exercise, Fermi’s paradox is a simply put question: &lt;em&gt;where is everybody?&lt;/em&gt;&lt;br /&gt;
+In other words, if life is a truly common phenomenon in the universe, then
+the probability of a civilization solving the problem of interstellar travel
+should be pretty high, and the effects of such a civilization on the galaxy 
+should be extremely evident to an observer (think entire stars being instantly 
+harvested for power).&lt;br /&gt;
+However, the SETI remains unsuccessful, hence where is everyone?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://scholar.google.it/scholar?q=fermi+paradox&quot;&gt;A quick search on Scholar&lt;/a&gt;
+will give you literally thousands of reasons not to panic (or maybe do the
+opposite, depending on how much you like aliens), and provide you with many
+logical reasons why the presence of ETI could go unnoticed, leaving us in our
+quiet and lonely neighborhood.&lt;br /&gt;
+Having sorted that out, we can safely go back to our Twitter feeds to discuss
+&lt;a href=&quot;https://twitter.com/dog_rates/status/775410014383026176&quot;&gt;serious business&lt;/a&gt; 
+and &lt;a href=&quot;https://www.theguardian.com/technology/2017/aug/14/elon-musk-ai-vastly-more-risky-north-korea&quot;&gt;Elon Musk’s latest views on AI&lt;/a&gt;.&lt;br /&gt;
+We can also go back to our comfy evening reads, which in my case mean Hofstader’s
+&lt;em&gt;GEB&lt;/em&gt; (for the sixth time or so) and Nick Bostrom’s &lt;em&gt;Superintelligence&lt;/em&gt;, 
+while listening to the sound of the falling rain.
+And then, when the words are stirring inside your head, and the rain has
+flushed the world clean, and the only sound you can hear is the quiet whirring
+of the GPU fan, while it’s training that 10-layer net that you’ve been working 
+on; only then, you might find yourself asking the question: &lt;em&gt;where the hell is superintelligence?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;That’s a reasonable question, isn’t it? Just look at all the informed opinions 
+of better, wiser people than me on the subject. They may disagree on its nature, 
+but no one (&lt;em&gt;no one&lt;/em&gt;) disagrees that AGI will have an almost infinite growth 
+rate.&lt;br /&gt;
+Go back to the second sentence of this post, and replace “interstellar travel”
+with “artificial intelligence” to have an idea of what that may look like. 
+And we’re not talking of a simple Kardashev scale boost; a superintelligence would
+be well aware of its physical limitations, so we’d likely be looking at an
+end-of-the-galaxy scenario, with all available matter being converted to 
+computing infrastructure, &lt;em&gt;à la&lt;/em&gt; Charles Stross (Spoiler alert: &lt;em&gt;Accelerando&lt;/em&gt; 
+is in my top 3 favourite sci-fi novels, ever).&lt;/p&gt;
+
+&lt;p&gt;A phenomenon so powerful that its mere exisistence would change the scale of 
+reference for every other phenomena in the universe, something so good at self
+imporving that it would only be limited by physical laws.&lt;/p&gt;
+
+&lt;p&gt;So where is it?&lt;/p&gt;
+
+&lt;p&gt;Given that the set of &lt;em&gt;bad&lt;/em&gt; scenarios would (probably) have such evident 
+consequences, we have to consider the postive and neutral outcomes, before 
+denying the existence of a super AI.&lt;/p&gt;
+
+&lt;p&gt;If the effects of a superintelligence on its universe were not so devastating, 
+if we look at the brightest end of the spectrum of possibility, think about the 
+advances that such an entity would bring to its creators. All the technologically
+motivated solutions to the Fermi paradox, at that point, would be null, leaving
+us with a whole lot less formal analysis, and a whole lot more speculation on
+alien sociology and superintelligent motives.&lt;br /&gt;
+For what other reason could a civilization with a superintelligence in its 
+tollbox have to not reach out of its planet?&lt;/p&gt;
+
+&lt;p&gt;Moreover, we couldn’t still exclude a catastrophic end of the galaxy, if the 
+computational necessities of the AI required it to favor an absolute good
+(its existence) to a relative one (our existence).
+Therefore, if we allow for a truly &lt;em&gt;good&lt;/em&gt; superintelligence to exist somewhere
+in the universe right now (akin to a thought God), we have to imagine natural, 
+moral, or logical impediments that prevent it from communicating outwards and
+spreading infinite progress.&lt;/p&gt;
+
+&lt;p&gt;From another perspective, even if talking about &lt;em&gt;likelihood&lt;/em&gt; in this context 
+is a serious gnoseological gamble, it seems that the neutral scenarios would 
+likely be the less noticeable: superintelligence is there, but it has no drive 
+to manifest itself.&lt;br /&gt;
+That could either be for a lack of necessity (it wouldn’t need energy, or matter, 
+or information), or a lack of advantage (it wouldn’t want to reveal its presence
+to avoid danger, or to avoid pointless expenses of limited resources), and it 
+would be a fairly easy and rational explanation to the superintelligence paradox.&lt;br /&gt;
+A system in such a perfect equilibrium would probably exist in a super-state, 
+free from the unforgiving grip of entropy and eternally undetected (short of
+using another superintelligence, at which point the paradox would already be
+solved).&lt;/p&gt;
+
+&lt;p&gt;I stop here with the examples, because it’s out of my capabilities to summarize
+all possible scenarios, especially when we consider that the Fermi paradox has 
+inspired fifty years of debate. 
+And if we think about this debate, we see that “alien civilization”, “AI”, or 
+“God” can all be used interchangeably without changing the essence of the 
+discourse: why, if &lt;em&gt;they&lt;/em&gt; exist, are they not manifest?&lt;/p&gt;
+
+&lt;p&gt;As hard as we try to rationalize this question, we perfectly know that there
+are only two possible outcomes, that we are looking for a black swan that we’ll
+either find, or keep looking for. At the same time, we’ve learned very well 
+how to coexist with this uncertainty, because we only need the possibility of a
+forced ignorance, in order to accept an ignorance undesired.&lt;/p&gt;
+
+&lt;p&gt;And so, as men of rational intellects we can be crushed by the lack of knowledge, 
+or be incessantly driven by it, knowing that every second spent in the search 
+is a second that could have only be wasted otherwise. And those who are crushed, 
+may turn to faith, and find peace in knowing that their happiness resides with 
+the black swan, where it can’t be touched by mortal sight.&lt;/p&gt;
+
+&lt;p&gt;In the end, while telling us a lot about human condition, this thought leaves
+us back in our quiet neighbourhood of probable but unverifiable truths.&lt;br /&gt;
+However, when considering the practically null amout of time that constitutes our
+lives, a question may come to one’s mind: is it closer to human nature to 
+think of a God, or to seek one out?&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 25 Sep 2017 00:00:00 +0200</pubDate>
+        
+        <link>/posts/2017-09-25/fermi-paradox-ai.html</link>
+          
+        
+            <category>AI</category>
+        
+          
+        
+            <category>posts</category>
+        
+          
+      </item>
+    
+    <item>
         <title>New Blog</title>
-        <description>&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/header/oz.jpg&quot; alt=&quot;Australian Outback (ph. Daniele Grattarola)&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/header/oz.jpg&quot; alt=&quot;Australian Outback (ph. Daniele Grattarola)&quot; class=&quot;full-width&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This blog is an updated version of my old edgy, teenage-years blog at &lt;a href=&quot;http://exsubstantia.com&quot;&gt;exsubstantia.com&lt;/a&gt;.
 I kept a somewhat similar style because I like the way Exsubstantia looks, but I hope that the difference in content
@@ -36,7 +157,7 @@ You can also find me on &lt;a href=&quot;https://twitter.com/riceasphait&quot;&g
         <link>/posts/2017-09-19/new-blog.html</link>
           
         
-            <category>update</category>
+            <category>Update</category>
         
           
         

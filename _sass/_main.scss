@@ -10,10 +10,6 @@ body {
     font-size: 0px + $doc-font-size;
 }
 
-img {
-    width: 100%
-}
-
 /*--- GLOBAL TRANSITION -----------------------------------------------------*/
 
 b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, path {
@@ -219,6 +215,10 @@ figure {
 
 svg:not(:root) {
   overflow: hidden; 
+}
+
+.full-width {
+    width: 100%
 }
 
 /*--- PAGINATION ------------------------------------------------------------*/
