@@ -54,3 +54,5 @@ exclude:
   - package.json
   - spec
   - tmp
+
+excerpt_separator: <!--more-->

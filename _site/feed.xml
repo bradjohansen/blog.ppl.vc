@@ -5,8 +5,8 @@
     <description>A blog about AI, recommender systems, and other interesting stuff.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="nathanrooy.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 25 Sep 2017 00:24:16 +0200</pubDate>
-    <lastBuildDate>Mon, 25 Sep 2017 00:24:16 +0200</lastBuildDate>
+    <pubDate>Mon, 25 Sep 2017 10:48:40 +0200</pubDate>
+    <lastBuildDate>Mon, 25 Sep 2017 10:48:40 +0200</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
       
     
@@ -21,7 +21,8 @@ the probability of a civilization solving the problem of interstellar travel
 should be pretty high, and the effects of such a civilization on the galaxy 
 should be extremely evident to an observer (think entire stars being instantly 
 harvested for power).&lt;br /&gt;
-However, the SETI remains unsuccessful, hence where is everyone?&lt;/p&gt;
+However, the SETI remains unsuccessful, hence where is everyone? 
+&lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://scholar.google.it/scholar?q=fermi+paradox&quot;&gt;A quick search on Scholar&lt;/a&gt;
 will give you literally thousands of reasons not to panic (or maybe do the
@@ -111,7 +112,7 @@ may turn to faith, and find peace in knowing that their happiness resides with
 the black swan, where it can’t be touched by mortal sight.&lt;/p&gt;
 
 &lt;p&gt;In the end, while telling us a lot about human condition, this thought leaves
-us back in our quiet neighbourhood of probable but unverifiable truths.&lt;br /&gt;
+us back in our quiet neighborhood of probable but unverifiable truths.&lt;br /&gt;
 However, when considering the practically null amout of time that constitutes our
 lives, a question may come to one’s mind: is it closer to human nature to 
 think of a God, or to seek one out?&lt;/p&gt;

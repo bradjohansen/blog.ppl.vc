@@ -16,6 +16,7 @@ should be pretty high, and the effects of such a civilization on the galaxy
 should be extremely evident to an observer (think entire stars being instantly 
 harvested for power).  
 However, the SETI remains unsuccessful, hence where is everyone? 
+<!--more-->
 
 [A quick search on Scholar](https://scholar.google.it/scholar?q=fermi+paradox)
 will give you literally thousands of reasons not to panic (or maybe do the
@@ -105,7 +106,7 @@ may turn to faith, and find peace in knowing that their happiness resides with
 the black swan, where it can't be touched by mortal sight.
 
 In the end, while telling us a lot about human condition, this thought leaves
-us back in our quiet neighbourhood of probable but unverifiable truths.  
+us back in our quiet neighborhood of probable but unverifiable truths.  
 However, when considering the practically null amout of time that constitutes our
 lives, a question may come to one's mind: is it closer to human nature to 
 think of a God, or to seek one out?

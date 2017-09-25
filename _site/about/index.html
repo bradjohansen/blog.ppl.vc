@@ -142,22 +142,23 @@ My second home is in Ibiza, where I go every summer to get lost in nature and fi
 
 <script type="text/javascript">
     $('.photoset-grid-custom').photosetGrid({
-    // Set the gutter between columns and rows
-    gutter: '5px',
-  
-    // Wrap the images in links
-    highresLinks: true,
-  
-    // Asign a common rel attribute
-    rel: 'print-gallery',
+        // Set the gutter between columns and rows
+        gutter: '5px',
+      
+        // Wrap the images in links
+        highresLinks: true,
+      
+        // Asign a common rel attribute
+        rel: 'print-gallery',
 
-    onInit: function(){},
-    
-    onComplete: function(){
-        // Show the grid after it renders
-        $('.photoset-grid-custom').attr('style', '');
-    }
-});
+        onInit: function(){},
+        
+        onComplete: function(){
+            // Show the grid after it renders
+            // $('.photoset-grid-custom').attr('style', '');
+        }
+    });
+//    $(window).load(function() { resizePhotosetGrid(); });
 </script>
 
 <!-- SVG-->
