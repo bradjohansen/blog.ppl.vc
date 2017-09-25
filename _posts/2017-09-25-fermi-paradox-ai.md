@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: posts
-title: The Fermi's Paradox of Superintelligence
+title: The Fermi Paradox of Superintelligence
 tags: [AI]
 date-string: SEPTEMBER 25, 2017
 ---
