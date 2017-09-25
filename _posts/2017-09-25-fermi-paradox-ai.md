@@ -41,7 +41,7 @@ have an almost infinite growth rate.
 Go back to the second sentence of this post, and replace "interstellar travel"
 with "artificial intelligence" to have an idea of what that may look like. 
 And we're not talking of a simple Kardashev scale boost; a superintelligence would
-be well aware of its physical limitations, so we'd likely be looking at an
+be well aware of its physical limitations, so we would likely be looking at an
 end-of-the-galaxy scenario, with all available matter being converted to 
 computing infrastructure, _à la_ Charles Stross.  
 
@@ -49,11 +49,14 @@ A phenomenon so powerful that its mere exisistence would change the scale of
 reference for every other phenomena in the universe, something so good at self
 imporving that it would only be limited by physical laws. 
 
+If the probability of life in the universe is high, then so is the probability
+of a civilization developing a superintelligence, with all its extremely evident
+effects.  
 So where is it?  
 
-Given that the set of _bad_ scenarios would (probably) have such evident 
-consequences, we have to consider the postive and neutral outcomes, before 
-denying the existence of a super AI.
+So far, I only talked about a catastrophic scenario following the creation of a
+superintelligence, but we have to consider the postive and neutral outcomes, 
+before denying the existence of a super AI.
 
 If the effects of a superintelligence on its universe were not so devastating, 
 if we look at the brightest end of the spectrum of possibility, think about the 
@@ -61,16 +64,16 @@ advances that such an entity would bring to its creators. All the technologicall
 motivated solutions to the Fermi paradox, at that point, would be null, leaving
 us with a whole lot less formal analysis, and a whole lot more speculation on
 alien sociology and superintelligent motives.  
-For what other reason could a civilization with a superintelligence in its 
-tollbox have to not reach out of its planet?  
+What reason could a civilization with a superintelligence in its toolbox have 
+to not reach out of its planet?  
 
 Moreover, we couldn't still exclude a catastrophic end of the galaxy, if the 
 computational necessities of the AI required it to favor an absolute good
 (its existence) to a relative one (our existence).
 Therefore, if we allow for a truly _good_ superintelligence to exist somewhere
-in the universe right now (akin to a thought God), we have to imagine natural, 
-moral, or logical impediments that prevent it from communicating outwards and
-spreading infinite progress.
+in the universe right now, we have to imagine natural, moral, or logical 
+impediments that prevent it from communicating outwards and spreading infinite 
+progress.
 
 From another perspective, even if talking about _likelihood_ in this context 
 is a serious gnoseological gamble, it seems that the neutral scenarios would 
@@ -89,12 +92,12 @@ I stop here with the examples, because it's out of my capabilities to summarize
 all possible scenarios, especially when we consider that the Fermi paradox has 
 inspired fifty years of debate. 
 And if we think about this debate, we see that it extends back in the ages, 
-that "alien civilization", "AI", or "God" can be, and have been, used 
-interchangeably without changing the essence of the discourse: why, if _they_ 
-exist, are they not manifest?
+that "alien civilization", "AI", or "God" have been used interchangeably without
+ changing the essence of the discourse: why, if _they_ exist, are they not 
+ manifest?
 
 As hard as we try to rationalize this question, we perfectly know that there
-are only two possible outcomes, that we are looking for a black swan that we'll
+are only two possible outcomes, that we are looking for a black swan that we will
 either find, or keep looking for. At the same time, we've learned very well 
 how to coexist with this uncertainty, because we only need the possibility of a
 forced ignorance, in order to accept an ignorance undesired.
