@@ -5,13 +5,13 @@
     <description>A blog about AI, recommender systems, and other interesting stuff.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="nathanrooy.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 25 Sep 2017 10:48:40 +0200</pubDate>
-    <lastBuildDate>Mon, 25 Sep 2017 10:48:40 +0200</lastBuildDate>
+    <pubDate>Wed, 27 Sep 2017 11:37:38 +0200</pubDate>
+    <lastBuildDate>Wed, 27 Sep 2017 11:37:38 +0200</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
       
     
     <item>
-        <title>The Fermi's Paradox of Superintelligence</title>
+        <title>The Fermi Paradox of Superintelligence</title>
         <description>&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/2017-09-25/seti.jpg&quot; alt=&quot;The Allen Telescope Array (Public domain)&quot; class=&quot;full-width&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Attirbuted to Enrico Fermi as a back-of-the-envelope astrobiological philosphy 
@@ -47,7 +47,7 @@ have an almost infinite growth rate.&lt;br /&gt;
 Go back to the second sentence of this post, and replace “interstellar travel”
 with “artificial intelligence” to have an idea of what that may look like. 
 And we’re not talking of a simple Kardashev scale boost; a superintelligence would
-be well aware of its physical limitations, so we’d likely be looking at an
+be well aware of its physical limitations, so we would likely be looking at an
 end-of-the-galaxy scenario, with all available matter being converted to 
 computing infrastructure, &lt;em&gt;à la&lt;/em&gt; Charles Stross.&lt;/p&gt;
 
@@ -55,11 +55,14 @@ computing infrastructure, &lt;em&gt;à la&lt;/em&gt; Charles Stross.&lt;/p&gt;
 reference for every other phenomena in the universe, something so good at self
 imporving that it would only be limited by physical laws.&lt;/p&gt;
 
-&lt;p&gt;So where is it?&lt;/p&gt;
+&lt;p&gt;If the probability of life in the universe is high, then so is the probability
+of a civilization developing a superintelligence, with all its extremely evident
+effects.&lt;br /&gt;
+So where is it?&lt;/p&gt;
 
-&lt;p&gt;Given that the set of &lt;em&gt;bad&lt;/em&gt; scenarios would (probably) have such evident 
-consequences, we have to consider the postive and neutral outcomes, before 
-denying the existence of a super AI.&lt;/p&gt;
+&lt;p&gt;So far, I only talked about a catastrophic scenario following the creation of a
+superintelligence, but we have to consider the postive and neutral outcomes, 
+before denying the existence of a super AI.&lt;/p&gt;
 
 &lt;p&gt;If the effects of a superintelligence on its universe were not so devastating, 
 if we look at the brightest end of the spectrum of possibility, think about the 
@@ -67,16 +70,16 @@ advances that such an entity would bring to its creators. All the technologicall
 motivated solutions to the Fermi paradox, at that point, would be null, leaving
 us with a whole lot less formal analysis, and a whole lot more speculation on
 alien sociology and superintelligent motives.&lt;br /&gt;
-For what other reason could a civilization with a superintelligence in its 
-tollbox have to not reach out of its planet?&lt;/p&gt;
+What reason could a civilization with a superintelligence in its toolbox have 
+to not reach out of its planet?&lt;/p&gt;
 
 &lt;p&gt;Moreover, we couldn’t still exclude a catastrophic end of the galaxy, if the 
 computational necessities of the AI required it to favor an absolute good
 (its existence) to a relative one (our existence).
 Therefore, if we allow for a truly &lt;em&gt;good&lt;/em&gt; superintelligence to exist somewhere
-in the universe right now (akin to a thought God), we have to imagine natural, 
-moral, or logical impediments that prevent it from communicating outwards and
-spreading infinite progress.&lt;/p&gt;
+in the universe right now, we have to imagine natural, moral, or logical 
+impediments that prevent it from communicating outwards and spreading infinite 
+progress.&lt;/p&gt;
 
 &lt;p&gt;From another perspective, even if talking about &lt;em&gt;likelihood&lt;/em&gt; in this context 
 is a serious gnoseological gamble, it seems that the neutral scenarios would 
@@ -95,12 +98,12 @@ solved).&lt;/p&gt;
 all possible scenarios, especially when we consider that the Fermi paradox has 
 inspired fifty years of debate. 
 And if we think about this debate, we see that it extends back in the ages, 
-that “alien civilization”, “AI”, or “God” can be, and have been, used 
-interchangeably without changing the essence of the discourse: why, if &lt;em&gt;they&lt;/em&gt; 
-exist, are they not manifest?&lt;/p&gt;
+that “alien civilization”, “AI”, or “God” have been used interchangeably without
+ changing the essence of the discourse: why, if &lt;em&gt;they&lt;/em&gt; exist, are they not 
+ manifest?&lt;/p&gt;
 
 &lt;p&gt;As hard as we try to rationalize this question, we perfectly know that there
-are only two possible outcomes, that we are looking for a black swan that we’ll
+are only two possible outcomes, that we are looking for a black swan that we will
 either find, or keep looking for. At the same time, we’ve learned very well 
 how to coexist with this uncertainty, because we only need the possibility of a
 forced ignorance, in order to accept an ignorance undesired.&lt;/p&gt;

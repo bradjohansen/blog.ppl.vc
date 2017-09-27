@@ -221,6 +221,12 @@ svg:not(:root) {
     width: 100%
 }
 
+.image-grid {
+    display: grid; 
+    grid-auto-columns: 1fr 1fr; 
+    grid-gap: 5px;
+}
+
 /*--- PAGINATION ------------------------------------------------------------*/
 
 .pagination {

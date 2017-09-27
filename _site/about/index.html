@@ -127,39 +127,12 @@ My second home is in Ibiza, where I go every summer to get lost in nature and fi
 
 <br>
 
-<center>
-    <div class="photoset-grid-custom" data-layout="121">
-        <img src="/images/about/1.jpg">
-        <img src="/images/about/2.jpg">
-        <img src="/images/about/3.jpg">
-        <img src="/images/about/4.jpg">
-    </div>
+<center class="image-grid">
+    <img src="/images/about/1.jpg" style="grid-column: 1 / span 2;">
+    <img src="/images/about/2.jpg" style="grid-column: 1; overflow:hidden;">
+    <img src="/images/about/3.jpg" style="grid-column: 2;">
+    <img src="/images/about/4.jpg" style="grid-column: 1 / span 2;">
 </center>
-
-
-<!-- PHOTOSET GRID -->
-<script src="/assets/js/jquery.photoset-grid.js"></script>
-
-<script type="text/javascript">
-    $('.photoset-grid-custom').photosetGrid({
-        // Set the gutter between columns and rows
-        gutter: '5px',
-      
-        // Wrap the images in links
-        highresLinks: true,
-      
-        // Asign a common rel attribute
-        rel: 'print-gallery',
-
-        onInit: function(){},
-        
-        onComplete: function(){
-            // Show the grid after it renders
-            // $('.photoset-grid-custom').attr('style', '');
-        }
-    });
-//    $(window).load(function() { resizePhotosetGrid(); });
-</script>
 
 <!-- SVG-->
 <script type="text/javascript">
