@@ -1,6 +1,15 @@
 title:            Daniele Grattarola
 description:      A blog about AI, recommender systems, and other interesting stuff.
-       
+url:              danielegrattarola.github.io     
+author:           Daniele Grattarola
+twitter:
+    username: riceasphait
+social:
+    name: Daniele Grattarola
+    links:
+        - https://github.com/danielegrattarola
+        - https://linkedin.com/in/danielegrattarola
+        - https://danielegrattarola.github.io/feed.xml
 
 future:      true  # publish future dated posts --  true, false (default) 
 highlighter: rouge
@@ -10,6 +19,7 @@ gems:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-feed
+  - jekyll-seo-tag
   
 sass:
   sass_dir: _sass
