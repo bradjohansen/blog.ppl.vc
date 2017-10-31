@@ -2,6 +2,7 @@
 layout: post
 categories: posts
 title: "Overthinking Japan"
+image: /images/2017-10-31/bridge.jpeg
 tags: [travel, philosophy]
 date-string: OCTOBER 31, 2017
 ---

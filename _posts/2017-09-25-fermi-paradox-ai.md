@@ -2,6 +2,7 @@
 layout: post
 categories: posts
 title: The Fermi Paradox of Superintelligence
+image: /images/2017-09-25/seti.jpg
 tags: [AI]
 date-string: SEPTEMBER 25, 2017
 ---
