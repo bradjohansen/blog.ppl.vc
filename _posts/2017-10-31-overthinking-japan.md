@@ -45,3 +45,5 @@ Eventually, what this trip meant for me was a step forward to a view of existenc
 Besides overthinking, however, getting to know a different culture was amazing, the food was mind-blowing, I met amazing people, and learning Japanese is being lots of fun. I feel like I'm now ready to start a new adventure, like this trip was the perfect full stop to my first chapter and the start of a new one, in which I will test myself in the international arena of research and maybe, hopefully, leave a trace in the advances of humanity. 
 
 I warmly suggest you to check out [Inside Kyoto](https://insidekyoto.com) to get around Japan, it made the whole trip a lot more enjoyable for me.
+
+![Shinkyo brigde, Nikko (ph. Daniele Grattarola)]({{ site.url }}/images/2017-10-31/bridge.jpeg){: .full-width}
