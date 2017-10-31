@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Projects
+image: /images/header/projects.png
 ---
 This is a collection of written accounts for some of the projects I've worked on
  in the last years. Publications are followed by their DOI. <br><br>

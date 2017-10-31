@@ -1,6 +1,7 @@
 ---
 layout: post
 title: About
+image: /images/about/1.jpg
 ---
 
 <p>
