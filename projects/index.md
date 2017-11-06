@@ -11,7 +11,7 @@ This is a collection of written accounts for some of the projects I've worked on
 </center>
 
 <br>
-<a target="_blank" href="https://github.com/danielegrattarola/master-thesis">Deep Feature Extraction for Sample-Efficient Reinforcement Learning</a> - Master's Thesis (2017)
+<a target="_blank" href="/files/projects/2017_10_grattarola_master_thesis.pdf">Deep Feature Extraction for Sample-Efficient Reinforcement Learning</a> - Master's Thesis (2017)
 <br><br>
 
 <a target="_blank" href="/files/projects/2017_grattarola_recsys.pdf">Content-Based Approaches for Cold-Start Job Recommendations</a> - Proceedings of the ACM Recsys Challenge 2017 - <a href="http://dx.doi.org/10.1145/3124791.3124793">10.1145/3124791.3124793</a>
