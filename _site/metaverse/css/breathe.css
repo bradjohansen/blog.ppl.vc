@@ -1,0 +1,92 @@
+.container {
+	width: 80ch;
+	margin-left: auto ;
+	margin-right: auto ;
+	margin-top: 50px;
+	text-align: left;
+	padding-top: 50px;
+}
+
+.header {
+	font-size: 50px;
+	margin-top: 5%;
+}
+
+a {
+	font-size: 16px !important;
+	transition: all 0.15s ease-out 0s;
+	-moz-transform: translateZ(0); /*Enable hardware acceleration*/
+}
+
+a:link {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	color: inherit;
+	text-decoration: none;
+}
+
+.circle {
+	background-color: transparent;
+	border-radius:50%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.circle:after {
+	border-radius: 50%;
+	content: "";
+
+	display:flex;
+	align-items:center;
+	justify-content:center;
+
+	width: 30%;
+	height: auto;
+	padding-top: 30%;
+	margin-top: 2.5%;
+
+	background-color: #ffffff;
+	animation-name: breathe;
+	animation-duration: 12s;
+	animation-iteration-count: infinite;
+}
+
+.neon {
+	text-shadow: 0 0 10px rgba(255,255,255,1), 
+				0 0 40px #b03bd8, 
+				0 0 70px #b03bd8, 
+				0 0 80px #b03bd8, 
+				0 0 100px #b03bd8;
+}
+
+.neon-circle:after {
+	box-shadow: 0 0 10px rgba(255,255,255,1), 
+				0 0 20px rgba(255,255,255,1), 
+				0 0 30px rgba(255,255,255,1), 
+				0 0 40px #b03bd8, 
+				0 0 70px #b03bd8, 
+				0 0 80px #b03bd8, 
+				0 0 100px #b03bd8;
+}
+
+@keyframes breathe {
+	0%   {  content: ""; transform: scale(0.2); }
+	49%  { content: "" }
+	50%  { transform: scale(1) }
+	51%  { content: ""; }
+	99%  { content: ""; }
+	100% { content: ""; transform: scale(0.2) }
+}
