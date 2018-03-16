@@ -5,18 +5,21 @@ image: /images/about/1.jpg
 ---
 
 <p>
-I am a PhD Student of Computer Science at Università della Svizzera Italiana 
-(USI), graduated in Computer Science and Engineering at Politecnico di Milano in
- 2017.
-My work mostly focuses on deep learning, reinforcement learning, and recommender 
-systems.
+I am a PhD Student in machine learning at Università della Svizzera Italiana 
+(Lugano, CH), part of the Advanced Learning and Research Institute (ALaRI). 
+I graduated in Computer Science and Engineering at Politecnico di Milano in 2017. 
+<br>
+My research focuses on geometric deep learning and reinforcement learning for
+change detection, diagnostics, and control of dynamic systems described by 
+time-variant graphs.
 </p>
 
 <p>
-I am an avid reader, bicycle revolution supporter, ukulele player, red cat owner, 
-and worldwide traveler. 
+I am a bicycle revolution supporter, ukulele player, red cat owner, avid reader, 
+series addict, and worldwide traveler. 
 <br>
-My second home is in Ibiza, where I go every summer to get lost in nature and find myself again.
+My second home is in Ibiza, where I go every summer to get lost in nature and 
+find myself again.
 </p>
 
 <span>The purpose of this website is to leave a trace of my ideas, my work, and my experiences.</span>
