@@ -1,0 +1,430 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+   
+<head>
+    <meta charset="utf-8">
+<title>ML Team Projects: a Survival Guide &#8211; Daniele Grattarola</title>
+<meta name="description" content="A blog about AI and other interesting stuff.">
+<meta name="keywords" content="code, tutorial">
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ML Team Projects: a Survival Guide">
+<meta property="og:description" content="A blog about AI and other interesting stuff.">
+<meta property="og:url" content="http://localhost:4000/posts/2018-03-20/ml-team-projects.html">
+<meta property="og:site_name" content="Daniele Grattarola">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/posts/2018-03-20/ml-team-projects.html">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Daniele Grattarola Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!-- Webfonts -->
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!--JQuery and Slicknav-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="_/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
+<link rel="stylesheet" id="pagestyle" type="text/css" href="http://localhost:4000/assets/css/slicknav.min.css">
+<script src="http://localhost:4000/assets/js/jquery.slicknav.min.js"></script>
+
+
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>ML Team Projects: a Survival Guide | Daniele Grattarola</title>
+<meta property="og:title" content="ML Team Projects: a Survival Guide" />
+<meta name="author" content="Daniele Grattarola" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Ever since I started getting closer to machine learning, well before I started my PhD, I have always found it extremely annoying to keep track of experiments, parameters, and minor variations of code that may or may not be of utmost importance to the success of your project. This gets incredibly uglier as you wander into uncharted territory, when best practices start to fail you (or have never been defined at all) and the amount of details to keep in mind becomes quickly overwhelming. However, nothing increases the entropy of a project like introducing new people into the equation, each one with a different skillset, coding style (there is always that guy who writesPythonInCamelCase), and amount of experience. In this post I’ll try to sum up some of the problems that I have encountered when doing ML projects in teams (both for research and competitions), and some of the things that have helped me make my life easier when working on a ML project in general." />
+<meta property="og:description" content="Ever since I started getting closer to machine learning, well before I started my PhD, I have always found it extremely annoying to keep track of experiments, parameters, and minor variations of code that may or may not be of utmost importance to the success of your project. This gets incredibly uglier as you wander into uncharted territory, when best practices start to fail you (or have never been defined at all) and the amount of details to keep in mind becomes quickly overwhelming. However, nothing increases the entropy of a project like introducing new people into the equation, each one with a different skillset, coding style (there is always that guy who writesPythonInCamelCase), and amount of experience. In this post I’ll try to sum up some of the problems that I have encountered when doing ML projects in teams (both for research and competitions), and some of the things that have helped me make my life easier when working on a ML project in general." />
+<link rel="canonical" href="http://localhost:4000/posts/2018-03-20/ml-team-projects.html" />
+<meta property="og:url" content="http://localhost:4000/posts/2018-03-20/ml-team-projects.html" />
+<meta property="og:site_name" content="Daniele Grattarola" />
+<meta property="og:image" content="http://localhost:4000/images/2018-03-20/cover.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-03-20T00:00:00+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@riceasphait" />
+<meta name="twitter:creator" content="@Daniele Grattarola" />
+<script type="application/ld+json">
+{"name":null,"description":"Ever since I started getting closer to machine learning, well before I started my PhD, I have always found it extremely annoying to keep track of experiments, parameters, and minor variations of code that may or may not be of utmost importance to the success of your project. This gets incredibly uglier as you wander into uncharted territory, when best practices start to fail you (or have never been defined at all) and the amount of details to keep in mind becomes quickly overwhelming. However, nothing increases the entropy of a project like introducing new people into the equation, each one with a different skillset, coding style (there is always that guy who writesPythonInCamelCase), and amount of experience. In this post I’ll try to sum up some of the problems that I have encountered when doing ML projects in teams (both for research and competitions), and some of the things that have helped me make my life easier when working on a ML project in general.","author":{"@type":"Person","name":"Daniele Grattarola"},"@type":"BlogPosting","url":"http://localhost:4000/posts/2018-03-20/ml-team-projects.html","publisher":null,"image":"http://localhost:4000/images/2018-03-20/cover.jpg","headline":"ML Team Projects: a Survival Guide","dateModified":"2018-03-20T00:00:00+01:00","datePublished":"2018-03-20T00:00:00+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/2018-03-20/ml-team-projects.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+    <div class="navbar">
+		<a class="brand" href="/">DANIELEGRATTAROLA°</a>
+		<div id='menu'>
+			<a href="/">Home</a>
+            <a href="/archives/" >Archive</a>
+			<a href="/projects/" >Projects</a>
+            <a href="/metaverse/" >Metaverse</a>
+			<a href="/about/" class="current">About</a>
+		</div>
+	</div>
+    
+    <script>
+		$(function(){
+			$('#menu').slicknav({
+				label: '',
+				brand: '<a class="brand" href="/">DANIELEGRATTAROLA°</a>'
+			});
+		});
+	</script>
+</head>
+
+<!-- BODY -->
+<body id="post-index">
+    <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+    
+    <div id="main" role="main">
+        <article class="hentry">
+            
+            <!-- MAIN -->
+            <h1 class="entry-title">
+                <a>ML Team Projects: a Survival Guide</a>
+            </h1>
+                
+            <!-- POST CONTENT -->
+            <div class="entry-content">
+                <p><img src="http://localhost:4000/images/2018-03-20/cover.jpg" alt="Piss Alley in Shinjuku, Tokyo (ph. Daniele Grattarola)" class="full-width" /></p>
+
+<p>Ever since I started getting closer to machine learning, well before I started my PhD, I have always found it extremely annoying to keep track of experiments, parameters, and minor variations of code that may or may not be of utmost importance to the success of your project.<br />
+This gets incredibly uglier as you wander into uncharted territory, when best practices start to fail you (or have never been defined at all) and the amount of details to keep in mind becomes quickly overwhelming.<br />
+However, nothing increases the entropy of a project like introducing new people into the equation, each one with a different skillset, coding style (there is always that guy who <code class="highlighter-rouge">writesPythonInCamelCase</code>), and amount of experience.</p>
+
+<p>In this post I’ll try to sum up some of the problems that I have encountered when doing ML projects in teams (both for research and competitions), and some of the things that have helped me make my life easier when working on a ML project in general.<br />
+<!--more-->
+Some of these require people to drop their ancient, stone-engraved practices and beliefs: they will hate you for enforcing change, but after a while you’ll all be laughing back at when Bob used to store 40GB of <code class="highlighter-rouge">.csv</code> datasets on a Telegram chat.</p>
+
+<p>The three main areas that I’ll cover are:</p>
+
+<ul>
+  <li>How to deal with code, so that anyone will be able to reproduce the stuff you did and (this is a crazy one) <em>understand what you did by looking at the code</em>;</li>
+  <li>How to deal with data, so that good ol’ Bob will not only stop using Telegram as a storage server, but will also stop storing data in that obscure standard from 1997;</li>
+  <li>How to deal with logs, so that every piece of information needed to replicate an experiment will be stored somewhere, and you won’t need to run a mental Git tree to remember every little change that the project underwent in the previous 6 months.</li>
+</ul>
+
+<hr />
+
+<h2 id="code">Code</h2>
+
+<p>In this post I’ll be mostly talking about Python.<br />
+That’s because 99% of the ML projects I’ve worked on have been in Python, and the remaining 1% is what Rule 1 of this section is about. I’ll try to keep it as general as possible, but in the end I’m a simple ML PhD student who goes with the trend, so Python it is.<br />
+Let’s start from two basic rules (which, I assure you, have been made necessary by experience):</p>
+
+<p><strong>1. Use a single programming language</strong><br />
+Your team members may come from different backgrounds, have different skills, and different degrees of experience. This can become particularly problematic when coding for a project, as people will try to stick to the languages they know best (usually the ones they used during their education) because they rightfully feel that their performance may suffer from using a different language.<br />
+Democratically deciding on which language to use may be a hard task, but you must never be tempted to tolerate a mixed codebase if you are serious about being a team.<br />
+Eventually, someone might have to put their fist down and resort to threat: don’t push that <code class="highlighter-rouge">.r</code> file on my Python repo ever again if you wish to live.</p>
+
+<p><strong>2. Everybody must be using the same version of everything</strong> <br />
+This should be pretty obvious, but I’ve witnessed precious hours being thrown to the wind because OpenAI’s <code class="highlighter-rouge">gym</code> (just to name one) was changed in the backend between versions and nobody had a clue why the algorithms were running differently on different machines. <br />
+Another undesirable situation may present itself when integrating existing codebases written in different versions of the same language. This is obviously more relevant with Python 2/3, where the code is backwards compatible enough between versions for the integration to go smoothly, but <code class="highlighter-rouge">2/3</code> is sneakily equal to 0 in Python 2 and 0.66 in Python 3 (and this may not always be apparent immediately).</p>
+
+<p>To make it short:</p>
+
+<ul>
+  <li>check your Pythons.</li>
+  <li><code class="highlighter-rouge">pip install -U</code> at least once a week (or never at all until you’re done).</li>
+</ul>
+
+<p>Going a bit more in depth into the realm of crap that one may find oneself in, even once you’re sure that everyone is synced on the basics, there are some additional rules that can greatly improve the overall project experience and will prepare you for more advanced situations in any team project.</p>
+
+<p><strong>3. Write documentation for at least input and output</strong><br />
+You have to work with the sacred knowledge that people may not want to read your code.<br />
+Good documentation is the obvious way to avoid most issues when it comes to working on a team project, but codebases tend to get really big and deadlines tend to get really close, so it may not always be possible to spend time documenting in detail every function. <br />
+A simple trade-off for the sake of sanity is to limit documentation to a single sentence describing what functions do, but clearly describing what are the expected input and output formats. A big plus here is to perform runtime checks, and fail early when the inputs are wrong.<br />
+For instance, one could do something like this:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+	<span class="s">""" Does a thing.
+	:param a: np.ndarray of shape (n_samples, n_channels); the data to be processed.
+	:param b: None or int; the amount of this in that (if None, it will be inferred).
+
+	:return: np.ndarray of shape (n_samples, n_channels + b); the result.
+	"""</span>
+	<span class="k">if</span> <span class="n">a</span><span class="o">.</span><span class="n">ndim</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">:</span>
+		<span class="k">raise</span> <span class="nb">ValueError</span><span class="p">(</span><span class="s">'Expected rank 2 array, got rank {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">ndim</span><span class="p">))</span>
+
+	<span class="k">if</span> <span class="n">b</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+		<span class="k">raise</span> <span class="nb">TypeError</span><span class="p">(</span><span class="s">'b should be int or None'</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p><strong>4. <code class="highlighter-rouge">git branch &amp;&amp; git gud</code></strong><br />
+This is actually a good general practice that should be applied in any coding project.<br />
+Do not test stuff on <code class="highlighter-rouge">master</code>, learn to use the tools of the trade, and read the <a href="https://www.git-tower.com/blog/git-cheat-sheet/">Git cheat-sheet</a>.<br />
+Do not be afraid to create a branch to test a small idea (fortunately they come cheap), and your teammates will appreciate you for not messing up the codebase.</p>
+
+<p><strong>5. Stick to one programming paradigm and style</strong><br />
+This may be the hardest rule of all, especially because it’s fairly generic. 
+It’s difficult to formalize this rule properly, so here are some examples:</p>
+<ul>
+  <li>write PEP8 compliant code (or the PEP8 equivalent for other languages);</li>
+  <li>don’t use single letters for variables that have a specific semantic meaning (e.g. don’t use <code class="highlighter-rouge">W</code> when you can use <code class="highlighter-rouge">weights</code>);</li>
+  <li>keep function signatures coherent;</li>
+  <li>don’t write cryptic one-liners to show off your power level;</li>
+  <li>don’t use a <code class="highlighter-rouge">for</code> cycle if everything else is vectorized;</li>
+  <li>don’t define classes if everything else is done with functions in modules (e.g. don’t create a <code class="highlighter-rouge">Logger</code> class that exposes a <code class="highlighter-rouge">log()</code> method, but create a <code class="highlighter-rouge">logging.py</code> module and <code class="highlighter-rouge">import log</code> from it);</li>
+  <li>don’t use sparse matrices if everything else is dense (unless absolutely necessary, and always remember Rule 3 anyway).</li>
+</ul>
+
+<p>I realize this is all a bit vague, so I’ll just summarize it as “stick to the plan” and shamelessly leave you to learn from experience.</p>
+
+<p><strong>6. Don’t add a dependency if you’ll only use it once</strong><br />
+This could have actually been an example of Rule 6, but I’ve seen too many atrocities in this regard to not make it into a rule.<br />
+Sometimes it will be absolutely tempting to use a library with which you have experience to do a single task, and you will want to import that library “just this once” to get done with it.<br />
+This quickly leads to <a href="https://en.wikipedia.org/wiki/Dependency_hell">dependency hell</a> and puts Rule 2 in danger, so try to avoid it at all costs. <br />
+Examples of this include using Pandas because you are not confident enough with Numpy’s slicing, or importing Seaborn because Matplotlib will require some grinding, or copy-pasting that two-LOC solution from StackOverflow.<br />
+Of course, this is gray territory and you should proceed with common sense: sometimes it’s really useless to reinvent the wheel, in which case you can <code class="highlighter-rouge">import</code> away without guilt, but most times a quick Google search will provide you with native solutions within the existing requirements of the project.</p>
+
+<p><strong>7. Comment non-trivial code, but do not over-commit to the cause</strong><br />
+Comments should be a central element of any codebase, because they are the most effective way of allowing others (especially the less skilled) to understand what you did; they are the only ones that can save your code’s understandability should Rule 5 come less.<br />
+Especially in ML projects, where complex ideas may lead to complex architectures, and most stuff is usually vectorized (i.e. ugly, ugly code may happen more frequently than not), leaving a good trail of comments behind you may be crucial for the sake of the project, especially when you find yourself debugging a piece of code that was written six months before.<br />
+At the same time, you should avoid commenting every single line of code that you write, in order to keep the code as tidy as possible, reduce redundancy, and improve readability.<br />
+So for instance, a good comment would be:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">output</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">weights</span><span class="p">,</span> <span class="n">inputs</span><span class="p">)</span> <span class="o">+</span> <span class="n">b</span>  <span class="c"># Compute the model's output as WX + b</span>
+</code></pre>
+</div>
+
+<p>where the information conveyed is as minimal and as exact as possible (maybe this specific example shouldn’t even require a comment, but you get the idea). Note that in this case the comment refers to variables by other names: this is not necessarily a good practice, but I find it helpful to link what you are doing in the code with what you did in the associated paper.<br />
+On the other hand, a comment like the following (actually found in the wild):</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># Set the model's flag to freeze the weights and prevent training</span>
+<span class="n">model</span><span class="o">.</span><span class="n">trainable</span> <span class="o">=</span> <span class="bp">False</span>
+</code></pre>
+</div>
+
+<p>should be avoided at all cost. But you knew that already.</p>
+
+<hr />
+
+<h2 id="data">Data</h2>
+
+<p>Data management is a field that is so vast and so complex that it’s basically impossible for laymen (such as myself) to do a comprehensive review of the best practices and tools.<br />
+Here I’ll try to give a few pointers that are available to anyone with basic command line and programming knowledge, as well as some low-hassle tricks to simplify the life of the team.<br />
+You should probably note, as a disclaimer, that I’ve never worked with anything bigger than 50GB, so there’s that. But anyway, here we go.</p>
+
+<p><strong>1. Standardize and modernize data formats</strong><br />
+Yes, I know. I know that in 1995, IEEE published an extremely well defined standard to encode an incredibly specific type of information, and that this is exactly the type of data that we’re using right now.
+And I know that XML was the semantic language of the future, in 2004.
+I know that you searched the entire Internet for that dataset, and that the Internet only gave you a <code class="highlighter-rouge">.mat</code> file in return.<br />
+But, this is what we are going to do:</p>
+
+<ol>
+  <li>we’re gonna use <code class="highlighter-rouge">.npz</code> for matrices;</li>
+  <li>we’re gonna use <code class="highlighter-rouge">.json</code> for relational data;</li>
+  <li>we’re gonna use <code class="highlighter-rouge">.csv</code> for classic-style datasets (e.g. Iris, stuff with well defined categories);</li>
+  <li>we’re gonna serialize everything else directly from the code.</li>
+</ol>
+
+<p>It’s better to convert data once, and then read from the chosen standard format, rather than converting at runtime, every time.</p>
+
+<p><strong>2. Drop the Dropbox</strong> <br />
+Dropbox and Google Drive are consumer-oriented platforms that are specifically designed to help the average user have a simple and effective experience with cloud storage. They surely can be used as backend for more technical situations through the use of command line, but in the end they will bring you down to integration hell and keep you there forever.<br />
+Here’s a short list of tools and tips for cloud storage and data handling that I have used in the past as alternative to the big D (no pun intended).</p>
+
+<p>Data storage:</p>
+<ul>
+  <li>Set up a centralized server (as you most likely do anyway to run heavy computations) and keep everything there;</li>
+  <li>Set up and S3 bucket and add a <code class="highlighter-rouge">dataset_downloader.py</code> to your code;</li>
+  <li>Set up a NAS (good for offices, less for remote development);</li>
+</ul>
+
+<p>Data transfers:</p>
+<ul>
+  <li>Use the amazing <a href="https://transfer.sh">transfer.sh</a>, a free service that allows you to upload and download files up to 10GB for up to 30 days;</li>
+  <li>Use <code class="highlighter-rouge">rsync</code>;</li>
+  <li>Use <code class="highlighter-rouge">sftp</code>;</li>
+  <li>Use Filezilla or equivalent <code class="highlighter-rouge">sftp</code> clients.</li>
+</ul>
+
+<p><strong>3. Don’t use Git to move source files between machines</strong><br />
+This is once again an extension of the previous rule.<br />
+The situation is the following: you’re debugging a script, testing out hyperparameters, or developing a new feature of your architecture. You need to run the microscopically different script on the department’s server, because your laptop can’t deal with it. You <code class="highlighter-rouge">git commit -m 'fix' &amp;&amp; git push origin master</code>. Linus Torvalds dies (and also you broke Rule 4 of the coding section).<br />
+Quick fix: keep a <code class="highlighter-rouge">sftp</code> session open and <code class="highlighter-rouge">put</code> the script, instead. Once you’re sure that the code works, then you can roll back the changes on the remote machine, commit from the local machine just once, and then pull on the remote to finish.</p>
+
+<p><strong>4. Don’t push data to Github</strong><br />
+On a similar note, avoid using Github to keep track of your data, especially if the data is subject to frequent changes. Github will block you if you surpass a certain file size, but in general this is a solution that doesn’t scale.<br />
+There is one exception to this rule: small, public benchmark datasets. Those are fine and may help people to reproduce your work by conveniently providing them with a working OOB environment, but everything else should be handled properly.</p>
+
+<p><strong>5. Test small, run big</strong> <br />
+Keep a small subset of your data on your development machine, big enough to cover all possible use cases (e.g. train/test splits or cross validation), but small enough to keep your runtimes in the order of seconds.<br />
+Once you’re ready to run experiments for good, you can use the whole dataset and leave the machine to do its work.</p>
+
+<hr />
+
+<h2 id="experiments">Experiments</h2>
+
+<p>Experiment, runs, call them however you like. It’s the act of taking a piece of code that implements a learning algorithm, throw data at it, get information in return.<br />
+I’ve wasted long hours trying to come up with the perfect Excel sheet to keep track of every nuance of my experiments, only to realize that it’s basically impossible to do so effectively.<br />
+In the end, I’ve found that the best solutions are to either have your script output a dedicated folder for each run, or have an old school paper notebook on which you record your methodology as you would take notes in class. Since the latter is more time consuming and personal, I’ll focus on the former.</p>
+
+<p><strong>1. Keep hyperparameters together and logged</strong><br />
+By my very own, extremely informal definition, hyperparameters are those things that you have to pick by hand (or cross-validation) and that will FUCK! YOU! UP! whenever they feel like it. You might think that the success of your paper depends on your hard work, but it really doesn’t: it’s how you pick hyperparameters.<br />
+But asides aside, you really should keep track of the hyperparameters for every experiment that you run, for two simple reasons:</p>
+<ol>
+  <li>They will be there when you need to replicate results or publish your code with the best defaults;</li>
+  <li>They will be there when you need to write the Experiments section of the paper, so you will be sure that result A corresponds to hyperparameters set B, without having to rely on your source code to keep track of hyperparameters for you.</li>
+</ol>
+
+<p>In general, it’s also a good idea to log every possible choice and assumption that you have to make for an experiment, and that includes also meta-information like what optimization algorithm or loss you used in the run.</p>
+
+<p>By logging everything properly, you’ll ensure that every team member will know where to look for information, ad they will not need to assume anything else other than what is written in the logs.</p>
+
+<p>A cool code snippet that I like to run after the prologue of every script is the following (taken from my current project):</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># Defined somewhere at some point</span>
+<span class="k">def</span> <span class="nf">log</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="n">print_string</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">LOGFILE</span>
+    <span class="n">string</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">string</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">):</span>
+        <span class="n">string</span> <span class="o">+=</span> <span class="s">'</span><span class="se">\n</span><span class="s">'</span>
+    <span class="k">if</span> <span class="n">print_string</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">LOGFILE</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">LOGFILE</span><span class="p">,</span> <span class="s">'a'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+
+<span class="c"># Define all hyperparameters here</span>
+<span class="c"># ...</span>
+
+<span class="c"># Log hyperparameters</span>
+<span class="n">log</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span>
+<span class="n">vars_to_log</span> <span class="o">=</span> <span class="p">[</span><span class="s">'SEED'</span><span class="p">,</span> <span class="s">'latent_space'</span><span class="p">,</span> <span class="s">'learning_rate'</span><span class="p">,</span> <span class="s">'beta_1'</span><span class="p">,</span> <span class="s">'epochs'</span><span class="p">,</span> 
+	       <span class="s">'batch_size'</span><span class="p">,</span> <span class="s">'es_patience'</span><span class="p">,</span> <span class="s">'classes'</span><span class="p">,</span> <span class="s">'optimizer'</span><span class="p">,</span> <span class="s">'loss'</span><span class="p">]</span>
+<span class="n">vars_string</span> <span class="o">=</span> <span class="s">'Setting:</span><span class="se">\n</span><span class="s">'</span>
+<span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">vars_to_log</span><span class="p">:</span>
+    <span class="n">vars_string</span> <span class="o">+=</span> <span class="s">'- {}: {}</span><span class="se">\n</span><span class="s">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="n">v</span><span class="p">)))</span>
+<span class="n">log</span><span class="p">(</span><span class="n">vars_string</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>which will give you a neat and tidy:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>/path/to/file/run.py
+Setting: 
+- SEED: 1337 
+- latent_space: 128 
+- learning_rate: 1e-3
+- beta_1: 0.99
+- epochs: 100 
+- batch_size: 32 
+- es_patience: 10
+- classes: 2
+- optimizer: 'adam' 
+- loss: 'binary_crossentropy'		   
+</code></pre>
+</div>
+
+<p><strong>2. Log architectural details</strong> <br />
+This one is an extension of Rule 1, but I just wanted to show off this extremely useful function to convert a Keras model to a string:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">model_to_str</span><span class="p">(</span><span class="n">model</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">to_str</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
+        <span class="n">model_to_str</span><span class="o">.</span><span class="n">output</span> <span class="o">+=</span> <span class="nb">str</span><span class="p">(</span><span class="n">line</span><span class="p">)</span> <span class="o">+</span> <span class="s">'</span><span class="se">\n</span><span class="s">'</span>
+    <span class="n">model_to_str</span><span class="o">.</span><span class="n">output</span> <span class="o">=</span> <span class="s">''</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">(</span><span class="n">print_fn</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">to_str</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">model_to_str</span><span class="o">.</span><span class="n">output</span>
+</code></pre>
+</div>
+
+<p>Keep track of how your model is structured, and save this information for every experiment so that you will be able to remember changes in time.<br />
+Sometimes, I’ve seen people copy-pasting entire scripts in the output folder of an experiment in order to remember what architecture they used: don’t.</p>
+
+<p><strong>3. Plots before logs</strong><br />
+We do science to show our findings to the world, the other members of our team, or at the very least to our bosses and supervisors.<br />
+This means that the best results that you may obtain in a project instantly lose their value if you cannot communicate properly what you found, and in 2018 that means that you have to learn how to use data visualization techniques. <br />
+<a href="https://www.amazon.com/Visual-Display-Quantitative-Information/">Books</a> have been written on the subject, so I won’t go into details here. 
+Just remember that a good visualization always trumps a series of unfriendly floats floating around.<br />
+Some general tips on how to do data viz:</p>
+<ul>
+  <li>label your axes;</li>
+  <li>don’t be scared of 3D plots;</li>
+  <li>time is a powerful dimension that should always be taken into consideration: create animated plots whenever possible (use <code class="highlighter-rouge">matplotlib.animation</code> or <code class="highlighter-rouge">imageio</code> to create gifs in Python);</li>
+  <li>if you have an important metric of interest (e.g. best accuracy) and you’ve already saturated your plot’s dimensions, print it somewhere on the plot rather than storing it in a separate file.</li>
+</ul>
+
+<p><strong>4. Keep different experiments in different scripts</strong><br />
+This should probably go in the Code section of this post, but I’ll put it here as it relates more to experiments than to code.<br />
+Even with Rules 1 and 2 accounted for, sometimes you will have to make changes that are difficult to log. 
+In this case, I find it a lot more helpful to clone the current script (or create a new branch) and implement all variations on the new file.<br />
+This will prevent things like “"”temporarily””” hardcoding stuff to quickly test out a new idea, or having <code class="highlighter-rouge">if</code> statements in every other code block to account for the two different methodologies, and it will only add a bit of overhead to your development time.<br />
+The only downside of this rule is that sometimes you’ll find a bug or implement a cool plot in the new script, and then you’ll have to sync the old file with the new one. However, editors like PyCharm make it easy to keep files synced: just select the two scripts and hit <code class="highlighter-rouge">ctrl + d</code> to open the split-view editor which conveniently highlights the differences and lets you move the code around easily.</p>
+
+<hr />
+
+<p>This is far from a complete guide (probably far from a guide at all), and i realize that some of the rules are not even related to working in teams. I just wanted to put together a small set of practices that I picked up from people way more skilled than me, in the hope of making collaborations easier, simplifying the workflow of other fellow PhD students that are just beginning to work with code seriously, and eventually, hopefully, leading to a more standardized way of publishing ML research in the sake of reproducibility and democratization.<br />
+I am sure that many people will know better, smarter, more common practices that I am unaware of, so please do <a href="https://danielegrattarola.github.io/about/">contact me</a> if you want to share some of your knowledge.</p>
+
+<p>Cheers</p>
+
+            </div>  
+
+            <!--- DIVIDING LINE -->
+            <hr>
+    
+            <!-- POST TAGS -->
+            <div class="inline-tags">
+                <span>
+                    
+                        <a href="/tags/#code">#code&nbsp;&nbsp;&nbsp;</a>
+                    
+                        <a href="/tags/#tutorial">#tutorial&nbsp;&nbsp;&nbsp;</a>
+                    
+                </span>
+            </div>
+          
+            <br>
+            
+            <!-- POST DATE -->
+            <div class="post-date">
+                MARCH 20, 2018
+            </div>
+        </article>
+    </div>
+</body>
+    
+<!-- FOOTER -->  
+<footer>  
+    <div class="footer-wrapper">
+        <footer role="contentinfo">
+            <span>
+    &copy; 2018 Daniele Grattarola | <a href="/feed.xml">RSS feed</a><br>Like this blog and want to see more? Donate Bitcoins at <a href="bitcoin:1KLyYmceVcs1kXWkUcwrQBGrZymc85scXa">1KLyYmceVcs1kXWkUcwrQBGrZymc85scXa</a><br>Powered by <a target="_blank" href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a target="_blank" href="https://github.com/nathanrooy/Clean-and-Simple-Jekyll-Theme">Clean+Simple</a> theme.
+</span>
+
+        </footer>
+    </div>   
+</footer> 
+
+<!-- ANALYTICS -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-101322989-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</html>

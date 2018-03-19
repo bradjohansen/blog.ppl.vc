@@ -5,20 +5,23 @@ extra_css:
   - css/base.css
 ---
 
-<div class='container'>
+<div class='home-container'>
 	<div id="wrapper">
       <canvas id="stage" height="300"></canvas>
     </div>
     <div class="box">
-    		<a href="/">home</a>
+    	<a href="/" class='home-a'>home</a>
 			<br>
 			<br>
-			<a href="breathe.html">breathe</a>
+			<a href="breathe.html" class='home-a'>breathe</a>
 			<br>
 			<br>
-			<a href="https://danielegrattarola.github.io/startpage">startpage</a>
+			<a href="cuts.html" class='home-a'>cuts</a>
 			<br>
 			<br>
+      <a href="deep-sea.html" class='home-a'>deep sea</a>
+      <br>
+      <br>
 	</div>
 
 </div>

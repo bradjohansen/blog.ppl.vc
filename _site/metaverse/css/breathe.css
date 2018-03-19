@@ -1,42 +1,3 @@
-.container {
-	width: 80ch;
-	margin-left: auto ;
-	margin-right: auto ;
-	margin-top: 50px;
-	text-align: left;
-	padding-top: 50px;
-}
-
-.header {
-	font-size: 50px;
-	margin-top: 5%;
-}
-
-a {
-	font-size: 16px !important;
-	transition: all 0.15s ease-out 0s;
-	-moz-transform: translateZ(0); /*Enable hardware acceleration*/
-}
-
-a:link {
-	color: inherit;
-	text-decoration: none;
-}
-
-a:visited {
-	color: inherit;
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a:active {
-	color: inherit;
-	text-decoration: none;
-}
-
 .circle {
 	background-color: transparent;
 	border-radius:50%;
@@ -60,7 +21,7 @@ a:active {
 
 	background-color: #ffffff;
 	animation-name: breathe;
-	animation-duration: 12s;
+	animation-duration: 9s;
 	animation-iteration-count: infinite;
 }
 
