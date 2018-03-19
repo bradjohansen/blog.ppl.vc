@@ -1,17 +1,17 @@
 ---
 layout: post
 categories: posts
-title: "ML Team Projects: a Survival Guide"
+title: "Machine Learning Team Projects: a Survival Guide"
 image: /images/2018-03-20/cover.jpg
 tags: [code, tutorial]
 date-string: MARCH 20, 2018
 ---
 
-![Piss Alley in Shinjuku, Tokyo (ph. Daniele Grattarola)]({{ site.url }}/images/2018-03-20/cover.jpg){: .full-width}
+![Training a neural network]({{ site.url }}/images/2018-03-20/cover.jpg){: .full-width}
 
 Ever since I started getting closer to machine learning, well before I started my PhD, I have always found it extremely annoying to keep track of experiments, parameters, and minor variations of code that may or may not be of utmost importance to the success of your project.  
 This gets incredibly uglier as you wander into uncharted territory, when best practices start to fail you (or have never been defined at all) and the amount of details to keep in mind becomes quickly overwhelming.  
-However, nothing increases the entropy of a project like introducing new people into the equation, each one with a different skillset, coding style (there is always that guy who `writesPythonInCamelCase`), and amount of experience.  
+However, nothing increases the entropy of a project like introducing new people into the equation, each one with a different skillset, coding style, and amount of experience.  
 
 In this post I'll try to sum up some of the problems that I have encountered when doing ML projects in teams (both for research and competitions), and some of the things that have helped me make my life easier when working on a ML project in general.  
 <!--more-->
@@ -111,7 +111,7 @@ On the other hand, a comment like the following (actually found in the wild):
 model.trainable = False
 ```
 
-should be avoided at all cost. But you knew that already. 
+should be avoided at all costs. But you knew that already. 
 
 ------
 
@@ -132,7 +132,8 @@ But, this is what we are going to do:
 4. we're gonna use `.csv` for classic-style datasets (e.g. Iris, stuff with well defined categories);
 3. we're gonna serialize everything else directly from the code.
 
-It's better to convert data once, and then read from the chosen standard format, rather than converting at runtime, every time.
+Keep it as simple, as standard, and as modern as possible.  
+And remember: it's better to convert data once, and then read from the chosen standard format, rather than converting at runtime, every time.
 
 __2. Drop the Dropbox__   
 Dropbox and Google Drive are consumer-oriented platforms that are specifically designed to help the average user have a simple and effective experience with cloud storage. They surely can be used as backend for more technical situations through the use of command line, but in the end they will bring you down to integration hell and keep you there forever.  
