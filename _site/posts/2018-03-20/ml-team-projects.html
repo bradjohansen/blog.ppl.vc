@@ -6,19 +6,25 @@
    
 <head>
     <meta charset="utf-8">
-<title>ML Team Projects: a Survival Guide &#8211; Daniele Grattarola</title>
+<title>Machine Learning Team Projects: a Survival Guide &#8211; Daniele Grattarola</title>
 <meta name="description" content="A blog about AI and other interesting stuff.">
 <meta name="keywords" content="code, tutorial">
 
 <!-- MathJax -->
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:4000/images/2018-03-20/cover.jpg">
 
+<meta name="twitter:title" content="Machine Learning Team Projects: a Survival Guide">
+<meta name="twitter:description" content="A blog about AI and other interesting stuff.">
+<meta name="twitter:creator" content="@">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ML Team Projects: a Survival Guide">
+<meta property="og:title" content="Machine Learning Team Projects: a Survival Guide">
 <meta property="og:description" content="A blog about AI and other interesting stuff.">
 <meta property="og:url" content="http://localhost:4000/posts/2018-03-20/ml-team-projects.html">
 <meta property="og:site_name" content="Daniele Grattarola">
@@ -51,12 +57,12 @@
 
 
     <!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>ML Team Projects: a Survival Guide | Daniele Grattarola</title>
-<meta property="og:title" content="ML Team Projects: a Survival Guide" />
+<title>Machine Learning Team Projects: a Survival Guide | Daniele Grattarola</title>
+<meta property="og:title" content="Machine Learning Team Projects: a Survival Guide" />
 <meta name="author" content="Daniele Grattarola" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Ever since I started getting closer to machine learning, well before I started my PhD, I have always found it extremely annoying to keep track of experiments, parameters, and minor variations of code that may or may not be of utmost importance to the success of your project. This gets incredibly uglier as you wander into uncharted territory, when best practices start to fail you (or have never been defined at all) and the amount of details to keep in mind becomes quickly overwhelming. However, nothing increases the entropy of a project like introducing new people into the equation, each one with a different skillset, coding style (there is always that guy who writesPythonInCamelCase), and amount of experience. In this post I’ll try to sum up some of the problems that I have encountered when doing ML projects in teams (both for research and competitions), and some of the things that have helped me make my life easier when working on a ML project in general." />
-<meta property="og:description" content="Ever since I started getting closer to machine learning, well before I started my PhD, I have always found it extremely annoying to keep track of experiments, parameters, and minor variations of code that may or may not be of utmost importance to the success of your project. This gets incredibly uglier as you wander into uncharted territory, when best practices start to fail you (or have never been defined at all) and the amount of details to keep in mind becomes quickly overwhelming. However, nothing increases the entropy of a project like introducing new people into the equation, each one with a different skillset, coding style (there is always that guy who writesPythonInCamelCase), and amount of experience. In this post I’ll try to sum up some of the problems that I have encountered when doing ML projects in teams (both for research and competitions), and some of the things that have helped me make my life easier when working on a ML project in general." />
+<meta name="description" content="Ever since I started getting closer to machine learning, well before I started my PhD, I have always found it extremely annoying to keep track of experiments, parameters, and minor variations of code that may or may not be of utmost importance to the success of your project. This gets incredibly uglier as you wander into uncharted territory, when best practices start to fail you (or have never been defined at all) and the amount of details to keep in mind becomes quickly overwhelming. However, nothing increases the entropy of a project like introducing new people into the equation, each one with a different skillset, coding style, and amount of experience. In this post I’ll try to sum up some of the problems that I have encountered when doing ML projects in teams (both for research and competitions), and some of the things that have helped me make my life easier when working on a ML project in general." />
+<meta property="og:description" content="Ever since I started getting closer to machine learning, well before I started my PhD, I have always found it extremely annoying to keep track of experiments, parameters, and minor variations of code that may or may not be of utmost importance to the success of your project. This gets incredibly uglier as you wander into uncharted territory, when best practices start to fail you (or have never been defined at all) and the amount of details to keep in mind becomes quickly overwhelming. However, nothing increases the entropy of a project like introducing new people into the equation, each one with a different skillset, coding style, and amount of experience. In this post I’ll try to sum up some of the problems that I have encountered when doing ML projects in teams (both for research and competitions), and some of the things that have helped me make my life easier when working on a ML project in general." />
 <link rel="canonical" href="http://localhost:4000/posts/2018-03-20/ml-team-projects.html" />
 <meta property="og:url" content="http://localhost:4000/posts/2018-03-20/ml-team-projects.html" />
 <meta property="og:site_name" content="Daniele Grattarola" />
@@ -67,7 +73,7 @@
 <meta name="twitter:site" content="@riceasphait" />
 <meta name="twitter:creator" content="@Daniele Grattarola" />
 <script type="application/ld+json">
-{"name":null,"description":"Ever since I started getting closer to machine learning, well before I started my PhD, I have always found it extremely annoying to keep track of experiments, parameters, and minor variations of code that may or may not be of utmost importance to the success of your project. This gets incredibly uglier as you wander into uncharted territory, when best practices start to fail you (or have never been defined at all) and the amount of details to keep in mind becomes quickly overwhelming. However, nothing increases the entropy of a project like introducing new people into the equation, each one with a different skillset, coding style (there is always that guy who writesPythonInCamelCase), and amount of experience. In this post I’ll try to sum up some of the problems that I have encountered when doing ML projects in teams (both for research and competitions), and some of the things that have helped me make my life easier when working on a ML project in general.","author":{"@type":"Person","name":"Daniele Grattarola"},"@type":"BlogPosting","url":"http://localhost:4000/posts/2018-03-20/ml-team-projects.html","publisher":null,"image":"http://localhost:4000/images/2018-03-20/cover.jpg","headline":"ML Team Projects: a Survival Guide","dateModified":"2018-03-20T00:00:00+01:00","datePublished":"2018-03-20T00:00:00+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/2018-03-20/ml-team-projects.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"Ever since I started getting closer to machine learning, well before I started my PhD, I have always found it extremely annoying to keep track of experiments, parameters, and minor variations of code that may or may not be of utmost importance to the success of your project. This gets incredibly uglier as you wander into uncharted territory, when best practices start to fail you (or have never been defined at all) and the amount of details to keep in mind becomes quickly overwhelming. However, nothing increases the entropy of a project like introducing new people into the equation, each one with a different skillset, coding style, and amount of experience. In this post I’ll try to sum up some of the problems that I have encountered when doing ML projects in teams (both for research and competitions), and some of the things that have helped me make my life easier when working on a ML project in general.","author":{"@type":"Person","name":"Daniele Grattarola"},"@type":"BlogPosting","url":"http://localhost:4000/posts/2018-03-20/ml-team-projects.html","publisher":null,"image":"http://localhost:4000/images/2018-03-20/cover.jpg","headline":"Machine Learning Team Projects: a Survival Guide","dateModified":"2018-03-20T00:00:00+01:00","datePublished":"2018-03-20T00:00:00+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/2018-03-20/ml-team-projects.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -101,16 +107,16 @@
             
             <!-- MAIN -->
             <h1 class="entry-title">
-                <a>ML Team Projects: a Survival Guide</a>
+                <a>Machine Learning Team Projects: a Survival Guide</a>
             </h1>
                 
             <!-- POST CONTENT -->
             <div class="entry-content">
-                <p><img src="http://localhost:4000/images/2018-03-20/cover.jpg" alt="Piss Alley in Shinjuku, Tokyo (ph. Daniele Grattarola)" class="full-width" /></p>
+                <p><img src="http://localhost:4000/images/2018-03-20/cover.jpg" alt="Training a neural network" class="full-width" /></p>
 
 <p>Ever since I started getting closer to machine learning, well before I started my PhD, I have always found it extremely annoying to keep track of experiments, parameters, and minor variations of code that may or may not be of utmost importance to the success of your project.<br />
 This gets incredibly uglier as you wander into uncharted territory, when best practices start to fail you (or have never been defined at all) and the amount of details to keep in mind becomes quickly overwhelming.<br />
-However, nothing increases the entropy of a project like introducing new people into the equation, each one with a different skillset, coding style (there is always that guy who <code class="highlighter-rouge">writesPythonInCamelCase</code>), and amount of experience.</p>
+However, nothing increases the entropy of a project like introducing new people into the equation, each one with a different skillset, coding style, and amount of experience.</p>
 
 <p>In this post I’ll try to sum up some of the problems that I have encountered when doing ML projects in teams (both for research and competitions), and some of the things that have helped me make my life easier when working on a ML project in general.<br />
 <!--more-->
@@ -216,7 +222,7 @@ On the other hand, a comment like the following (actually found in the wild):</p
 </code></pre>
 </div>
 
-<p>should be avoided at all cost. But you knew that already.</p>
+<p>should be avoided at all costs. But you knew that already.</p>
 
 <hr />
 
@@ -230,16 +236,17 @@ You should probably note, as a disclaimer, that I’ve never worked with anythin
 Yes, I know. I know that in 1995, IEEE published an extremely well defined standard to encode an incredibly specific type of information, and that this is exactly the type of data that we’re using right now.
 And I know that XML was the semantic language of the future, in 2004.
 I know that you searched the entire Internet for that dataset, and that the Internet only gave you a <code class="highlighter-rouge">.mat</code> file in return.<br />
-But, this is what we are going to do:</p>
+But, this is what we should do instead:</p>
 
 <ol>
-  <li>we’re gonna use <code class="highlighter-rouge">.npz</code> for matrices;</li>
-  <li>we’re gonna use <code class="highlighter-rouge">.json</code> for relational data;</li>
-  <li>we’re gonna use <code class="highlighter-rouge">.csv</code> for classic-style datasets (e.g. Iris, stuff with well defined categories);</li>
-  <li>we’re gonna serialize everything else directly from the code.</li>
+  <li>use <code class="highlighter-rouge">.npz</code> for matrices;</li>
+  <li>use <code class="highlighter-rouge">.json</code> for structured data;</li>
+  <li>use <code class="highlighter-rouge">.csv</code> for classic relational data (e.g. the Iris dataset, stuff with well defined categories);</li>
+  <li>serialize everything else with libraries like Pickle or H5py.</li>
 </ol>
 
-<p>It’s better to convert data once, and then read from the chosen standard format, rather than converting at runtime, every time.</p>
+<p>Keep it as simple, as standard, and as modern as possible.<br />
+And remember: it’s better to convert data once, and then read from the chosen standard format, rather than converting at runtime, every time.</p>
 
 <p><strong>2. Drop the Dropbox</strong> <br />
 Dropbox and Google Drive are consumer-oriented platforms that are specifically designed to help the average user have a simple and effective experience with cloud storage. They surely can be used as backend for more technical situations through the use of command line, but in the end they will bring you down to integration hell and keep you there forever.<br />
@@ -264,6 +271,8 @@ Here’s a short list of tools and tips for cloud storage and data handling that
 This is once again an extension of the previous rule.<br />
 The situation is the following: you’re debugging a script, testing out hyperparameters, or developing a new feature of your architecture. You need to run the microscopically different script on the department’s server, because your laptop can’t deal with it. You <code class="highlighter-rouge">git commit -m 'fix' &amp;&amp; git push origin master</code>. Linus Torvalds dies (and also you broke Rule 4 of the coding section).<br />
 Quick fix: keep a <code class="highlighter-rouge">sftp</code> session open and <code class="highlighter-rouge">put</code> the script, instead. Once you’re sure that the code works, then you can roll back the changes on the remote machine, commit from the local machine just once, and then pull on the remote to finish.</p>
+
+<p>This will make life easier for someone who has to roll back the code or browse commits for any other reason, because they won’t have to guess which one of the ten ‘fix’ commits is the right one.</p>
 
 <p><strong>4. Don’t push data to Github</strong><br />
 On a similar note, avoid using Github to keep track of your data, especially if the data is subject to frequent changes. Github will block you if you surpass a certain file size, but in general this is a solution that doesn’t scale.<br />
@@ -410,7 +419,7 @@ I am sure that many people will know better, smarter, more common practices that
     <div class="footer-wrapper">
         <footer role="contentinfo">
             <span>
-    &copy; 2018 Daniele Grattarola | <a href="/feed.xml">RSS feed</a><br>Like this blog and want to see more? Donate Bitcoins at <a href="bitcoin:1KLyYmceVcs1kXWkUcwrQBGrZymc85scXa">1KLyYmceVcs1kXWkUcwrQBGrZymc85scXa</a><br>Powered by <a target="_blank" href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a target="_blank" href="https://github.com/nathanrooy/Clean-and-Simple-Jekyll-Theme">Clean+Simple</a> theme.
+    &copy; 2018 Daniele Grattarola | <a href="/feed.xml">RSS feed</a><br>Powered by <a target="_blank" href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a target="_blank" href="https://github.com/nathanrooy/Clean-and-Simple-Jekyll-Theme">Clean+Simple</a> theme.
 </span>
 
         </footer>

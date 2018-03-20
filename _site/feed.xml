@@ -5,18 +5,18 @@
     <description>A blog about AI and other interesting stuff.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="nathanrooy.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Mar 2018 01:48:56 +0100</pubDate>
-    <lastBuildDate>Mon, 19 Mar 2018 01:48:56 +0100</lastBuildDate>
+    <pubDate>Tue, 20 Mar 2018 14:40:49 +0100</pubDate>
+    <lastBuildDate>Tue, 20 Mar 2018 14:40:49 +0100</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
       
     
     <item>
-        <title>ML Team Projects: a Survival Guide</title>
-        <description>&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/2018-03-20/cover.jpg&quot; alt=&quot;Piss Alley in Shinjuku, Tokyo (ph. Daniele Grattarola)&quot; class=&quot;full-width&quot; /&gt;&lt;/p&gt;
+        <title>Machine Learning Team Projects: a Survival Guide</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/2018-03-20/cover.jpg&quot; alt=&quot;Training a neural network&quot; class=&quot;full-width&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Ever since I started getting closer to machine learning, well before I started my PhD, I have always found it extremely annoying to keep track of experiments, parameters, and minor variations of code that may or may not be of utmost importance to the success of your project.&lt;br /&gt;
 This gets incredibly uglier as you wander into uncharted territory, when best practices start to fail you (or have never been defined at all) and the amount of details to keep in mind becomes quickly overwhelming.&lt;br /&gt;
-However, nothing increases the entropy of a project like introducing new people into the equation, each one with a different skillset, coding style (there is always that guy who &lt;code class=&quot;highlighter-rouge&quot;&gt;writesPythonInCamelCase&lt;/code&gt;), and amount of experience.&lt;/p&gt;
+However, nothing increases the entropy of a project like introducing new people into the equation, each one with a different skillset, coding style, and amount of experience.&lt;/p&gt;
 
 &lt;p&gt;In this post I’ll try to sum up some of the problems that I have encountered when doing ML projects in teams (both for research and competitions), and some of the things that have helped me make my life easier when working on a ML project in general.&lt;br /&gt;
 &lt;!--more--&gt;
@@ -122,7 +122,7 @@ On the other hand, a comment like the following (actually found in the wild):&lt
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;should be avoided at all cost. But you knew that already.&lt;/p&gt;
+&lt;p&gt;should be avoided at all costs. But you knew that already.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -136,16 +136,17 @@ You should probably note, as a disclaimer, that I’ve never worked with anythin
 Yes, I know. I know that in 1995, IEEE published an extremely well defined standard to encode an incredibly specific type of information, and that this is exactly the type of data that we’re using right now.
 And I know that XML was the semantic language of the future, in 2004.
 I know that you searched the entire Internet for that dataset, and that the Internet only gave you a &lt;code class=&quot;highlighter-rouge&quot;&gt;.mat&lt;/code&gt; file in return.&lt;br /&gt;
-But, this is what we are going to do:&lt;/p&gt;
+But, this is what we should do instead:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;we’re gonna use &lt;code class=&quot;highlighter-rouge&quot;&gt;.npz&lt;/code&gt; for matrices;&lt;/li&gt;
-  &lt;li&gt;we’re gonna use &lt;code class=&quot;highlighter-rouge&quot;&gt;.json&lt;/code&gt; for relational data;&lt;/li&gt;
-  &lt;li&gt;we’re gonna use &lt;code class=&quot;highlighter-rouge&quot;&gt;.csv&lt;/code&gt; for classic-style datasets (e.g. Iris, stuff with well defined categories);&lt;/li&gt;
-  &lt;li&gt;we’re gonna serialize everything else directly from the code.&lt;/li&gt;
+  &lt;li&gt;use &lt;code class=&quot;highlighter-rouge&quot;&gt;.npz&lt;/code&gt; for matrices;&lt;/li&gt;
+  &lt;li&gt;use &lt;code class=&quot;highlighter-rouge&quot;&gt;.json&lt;/code&gt; for structured data;&lt;/li&gt;
+  &lt;li&gt;use &lt;code class=&quot;highlighter-rouge&quot;&gt;.csv&lt;/code&gt; for classic relational data (e.g. the Iris dataset, stuff with well defined categories);&lt;/li&gt;
+  &lt;li&gt;serialize everything else with libraries like Pickle or H5py.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;It’s better to convert data once, and then read from the chosen standard format, rather than converting at runtime, every time.&lt;/p&gt;
+&lt;p&gt;Keep it as simple, as standard, and as modern as possible.&lt;br /&gt;
+And remember: it’s better to convert data once, and then read from the chosen standard format, rather than converting at runtime, every time.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;2. Drop the Dropbox&lt;/strong&gt; &lt;br /&gt;
 Dropbox and Google Drive are consumer-oriented platforms that are specifically designed to help the average user have a simple and effective experience with cloud storage. They surely can be used as backend for more technical situations through the use of command line, but in the end they will bring you down to integration hell and keep you there forever.&lt;br /&gt;
@@ -170,6 +171,8 @@ Here’s a short list of tools and tips for cloud storage and data handling that
 This is once again an extension of the previous rule.&lt;br /&gt;
 The situation is the following: you’re debugging a script, testing out hyperparameters, or developing a new feature of your architecture. You need to run the microscopically different script on the department’s server, because your laptop can’t deal with it. You &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit -m 'fix' &amp;amp;&amp;amp; git push origin master&lt;/code&gt;. Linus Torvalds dies (and also you broke Rule 4 of the coding section).&lt;br /&gt;
 Quick fix: keep a &lt;code class=&quot;highlighter-rouge&quot;&gt;sftp&lt;/code&gt; session open and &lt;code class=&quot;highlighter-rouge&quot;&gt;put&lt;/code&gt; the script, instead. Once you’re sure that the code works, then you can roll back the changes on the remote machine, commit from the local machine just once, and then pull on the remote to finish.&lt;/p&gt;
+
+&lt;p&gt;This will make life easier for someone who has to roll back the code or browse commits for any other reason, because they won’t have to guess which one of the ten ‘fix’ commits is the right one.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;4. Don’t push data to Github&lt;/strong&gt;&lt;br /&gt;
 On a similar note, avoid using Github to keep track of your data, especially if the data is subject to frequent changes. Github will block you if you surpass a certain file size, but in general this is a solution that doesn’t scale.&lt;br /&gt;
