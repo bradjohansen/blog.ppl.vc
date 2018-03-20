@@ -125,12 +125,12 @@ __1. Standardize and modernize data formats__
 Yes, I know. I know that in 1995, IEEE published an extremely well defined standard to encode an incredibly specific type of information, and that this is exactly the type of data that we're using right now.
 And I know that XML was the semantic language of the future, in 2004.
 I know that you searched the entire Internet for that dataset, and that the Internet only gave you a `.mat` file in return.  
-But, this is what we are going to do:
+But, this is what we should do instead:
 
-1. we're gonna use `.npz` for matrices;
-2. we're gonna use `.json` for relational data;
-4. we're gonna use `.csv` for classic-style datasets (e.g. Iris, stuff with well defined categories);
-3. we're gonna serialize everything else directly from the code.
+1. use `.npz` for matrices;
+2. use `.json` for structured data;
+4. use `.csv` for classic relational data (e.g. the Iris dataset, stuff with well defined categories);
+3. serialize everything else with libraries like Pickle or H5py.
 
 Keep it as simple, as standard, and as modern as possible.  
 And remember: it's better to convert data once, and then read from the chosen standard format, rather than converting at runtime, every time.
@@ -153,7 +153,9 @@ Data transfers:
 __3. Don't use Git to move source files between machines__  
 This is once again an extension of the previous rule.  
 The situation is the following: you're debugging a script, testing out hyperparameters, or developing a new feature of your architecture. You need to run the microscopically different script on the department's server, because your laptop can't deal with it. You `git commit -m 'fix' && git push origin master`. Linus Torvalds dies (and also you broke Rule 4 of the coding section).  
-Quick fix: keep a `sftp` session open and `put` the script, instead. Once you're sure that the code works, then you can roll back the changes on the remote machine, commit from the local machine just once, and then pull on the remote to finish. 
+Quick fix: keep a `sftp` session open and `put` the script, instead. Once you're sure that the code works, then you can roll back the changes on the remote machine, commit from the local machine just once, and then pull on the remote to finish.  
+
+This will make life easier for someone who has to roll back the code or browse commits for any other reason, because they won't have to guess which one of the ten 'fix' commits is the right one.
 
 __4. Don't push data to Github__  
 On a similar note, avoid using Github to keep track of your data, especially if the data is subject to frequent changes. Github will block you if you surpass a certain file size, but in general this is a solution that doesn't scale.  
