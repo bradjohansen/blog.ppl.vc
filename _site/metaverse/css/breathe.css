@@ -1,7 +1,6 @@
 .circle {
 	background-color: transparent;
 	border-radius:50%;
-	display:flex;
 	align-items:center;
 	justify-content:center;
 }
@@ -18,7 +17,7 @@
 	height: auto;
 	padding-top: 30%;
 	margin-top: 2.5%;
-
+	margin-left: 35%;
 	background-color: #ffffff;
 	animation-name: breathe;
 	animation-duration: 9s;
