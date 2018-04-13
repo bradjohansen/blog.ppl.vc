@@ -111,6 +111,7 @@ a {
 	
 	.slicknav_nav {
 		background: none !important;
+		font-size: 18px !important;
 		color: $navbar-light !important;
 		text-align: right !important;
 	}
@@ -269,7 +270,7 @@ svg:not(:root) {
 
 .entry-content {
     font-size: 18px;
-    line-height: 26px;
+    line-height: 1.7em;
 }
 
 .main-header-image {

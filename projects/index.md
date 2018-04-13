@@ -3,8 +3,7 @@ layout: post
 title: Projects
 image: /images/header/projects.png
 ---
-This is a collection of written accounts for some of the projects I've worked on
- in the last years. Publications are followed by their DOI. <br><br>
+This is some of the stuff that I've worked on in the last years. Publications are followed by their DOI. <br><br>
 
 <center>
     <img src="/images/header/projects.png" alt="Glitch art #1 (by Daniele Grattarola)" class="full-width"/>
