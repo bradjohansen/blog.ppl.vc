@@ -10,7 +10,7 @@ This is some of the stuff that I've worked on in the last years. Publications ar
 </center>
 
 <br>
-<a target="_blank" href="https://arxiv.org/abs/1805.06299">Deep Feature Extraction for Sample-Efficient Reinforcement Learning</a> (2018)
+<a target="_blank" href="https://arxiv.org/abs/1805.06299">Learning Graph Embeddings on Constant-Curvature Manifolds for Change Detection in Graph Streams</a> (2018)
 <br><br>
 
 <a target="_blank" href="/files/projects/2017_10_grattarola_master_thesis.pdf">Deep Feature Extraction for Sample-Efficient Reinforcement Learning</a> - Master's Thesis (2017)
