@@ -58,6 +58,7 @@ a {
 	text-align: right;
 }
 
+
 .navbar{
 	a {
 	    color: $navbar-light;
@@ -271,6 +272,10 @@ svg:not(:root) {
 .entry-content {
     font-size: 18px;
     line-height: 1.7em;
+
+    a {
+    	text-decoration: underline !important;
+    }
 }
 
 .main-header-image {
