@@ -1,0 +1,321 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+   
+<head>
+    <meta charset="utf-8">
+<title>Graph Embeddings on Constant-Curvature Manifolds for Change Detection &#8211; Daniele Grattarola</title>
+<meta name="description" content="A blog about AI and other interesting stuff.">
+<meta name="keywords" content="AI, tutorial">
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- Twitter Cards -->
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:4000/images/2018-06-07/embeddings_plot.png">
+
+<meta name="twitter:title" content="Graph Embeddings on Constant-Curvature Manifolds for Change Detection">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Graph Embeddings on Constant-Curvature Manifolds for Change Detection">
+<meta property="og:url" content="http://localhost:4000/posts/2018-06-07/ccm-paper.html">
+<meta property="og:site_name" content="Daniele Grattarola">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/posts/2018-06-07/ccm-paper.html">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Daniele Grattarola Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!-- Webfonts -->
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!--JQuery and Slicknav-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="_/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
+<link rel="stylesheet" id="pagestyle" type="text/css" href="http://localhost:4000/assets/css/slicknav.min.css">
+<script src="http://localhost:4000/assets/js/jquery.slicknav.min.js"></script>
+
+
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Graph Embeddings on Constant-Curvature Manifolds for Change Detection | Daniele Grattarola</title>
+<meta property="og:title" content="Graph Embeddings on Constant-Curvature Manifolds for Change Detection" />
+<meta name="author" content="Daniele Grattarola" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="When considering relational problems, the temporal dimension is often crucial to understand whether the process behind the relational graph is evolving, and how; think how often people follow and unfollow each other on Instagram, how the type of content in one’s posts may change over time, and how all of these aspects are echoed throughout the network, interacting with one another in complex ways. While most works that apply deep learning to temporal networks are focused on the evolution of the graph at the node or edge level, it is extremely interesting to study a graph-based process from a global perspective, at the graph level, to detect trends and changes in the process itself." />
+<meta property="og:description" content="When considering relational problems, the temporal dimension is often crucial to understand whether the process behind the relational graph is evolving, and how; think how often people follow and unfollow each other on Instagram, how the type of content in one’s posts may change over time, and how all of these aspects are echoed throughout the network, interacting with one another in complex ways. While most works that apply deep learning to temporal networks are focused on the evolution of the graph at the node or edge level, it is extremely interesting to study a graph-based process from a global perspective, at the graph level, to detect trends and changes in the process itself." />
+<link rel="canonical" href="http://localhost:4000/posts/2018-06-07/ccm-paper.html" />
+<meta property="og:url" content="http://localhost:4000/posts/2018-06-07/ccm-paper.html" />
+<meta property="og:site_name" content="Daniele Grattarola" />
+<meta property="og:image" content="http://localhost:4000/images/2018-06-07/embeddings_plot.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-06-07T00:00:00+02:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@riceasphait" />
+<meta name="twitter:creator" content="@Daniele Grattarola" />
+<script type="application/ld+json">
+{"name":null,"description":"When considering relational problems, the temporal dimension is often crucial to understand whether the process behind the relational graph is evolving, and how; think how often people follow and unfollow each other on Instagram, how the type of content in one’s posts may change over time, and how all of these aspects are echoed throughout the network, interacting with one another in complex ways. While most works that apply deep learning to temporal networks are focused on the evolution of the graph at the node or edge level, it is extremely interesting to study a graph-based process from a global perspective, at the graph level, to detect trends and changes in the process itself.","author":{"@type":"Person","name":"Daniele Grattarola"},"@type":"BlogPosting","url":"http://localhost:4000/posts/2018-06-07/ccm-paper.html","publisher":null,"image":"http://localhost:4000/images/2018-06-07/embeddings_plot.png","headline":"Graph Embeddings on Constant-Curvature Manifolds for Change Detection","dateModified":"2018-06-07T00:00:00+02:00","datePublished":"2018-06-07T00:00:00+02:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/2018-06-07/ccm-paper.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+    <div class="navbar">
+		<a class="brand" href="/">DANIELEGRATTAROLA°</a>
+		<div id='menu'>
+			<a href="/">Home</a>
+            <a href="/archives/" >Archive</a>
+			<a href="/projects/" >Projects</a>
+            <a href="/metaverse/" >Metaverse</a>
+			<a href="/about/" class="current">About</a>
+		</div>
+	</div>
+    
+    <script>
+		$(function(){
+			$('#menu').slicknav({
+				label: '',
+				brand: '<a class="brand" href="/">DANIELEGRATTAROLA°</a>'
+			});
+		});
+	</script>
+</head>
+
+<!-- BODY -->
+<body id="post-index">
+    <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+    
+    <div id="main" role="main">
+        <article class="hentry">
+            
+            <!-- MAIN -->
+            <h1 class="entry-title">
+                <a>Graph Embeddings on Constant-Curvature Manifolds for Change Detection</a>
+            </h1>
+                
+            <!-- POST CONTENT -->
+            <div class="entry-content">
+                <p><img src="http://localhost:4000/images/2018-06-07/embeddings_plot.png" alt="Embeddings" class="full-width" /></p>
+
+<p>When considering relational problems, the temporal dimension is often crucial to understand whether the process behind the relational graph is evolving, and how; think how often people follow and unfollow each other on Instagram, how the type of content in one’s posts may change over time, and how all of these aspects are echoed throughout the network, interacting with one another in complex ways.</p>
+
+<p>While most works that apply deep learning to temporal networks are focused on the evolution of the graph at the node or edge level, it is extremely interesting to study a graph-based process from a global perspective, at the graph level, to detect trends and changes in the process itself.
+<!--more--></p>
+
+<p>This post is a simplified version of <a href="https://arxiv.org/abs/1805.06299">this paper</a>, so you might want to have a look at either one before reading the other.</p>
+
+<h2 id="be-the-change-you-want-to-see-in-the-process">Be the change you want to see in the process</h2>
+
+<p>We consider a process generating a stream of graphs (e.g. hourly snapshots of a power supply grid), and we make the assumption of having two <em>states</em>: a nominal regime (when the grid is stable) and a non-nominal regime (when there’s about to be a blackout). We know what the graphs look like in the nominal state, and we can use a dataset of nominal graphs to train our models, but we cannot know what the non-nominal state will look like: the goal is to discriminate between the two regimes, regardless.<br />
+If we consider this as a one-class classification problem, then we have <em>anomaly detection</em>; if we take into account the temporal dimension, then the task is to detect whether the process has permanently shifted to non-nominal, and we have the <em>change detection</em> problem, on which we focus here.</p>
+
+<p>Change detection can be easily formulated in statistical terms by considering two unknown nominal and non-nominal distributions driving a process, and running tests that can tell us whether the process is operating in one regime or the other.
+When dealing with graphs, however, things get a bit more complicated.<br />
+While detecting changes in stationarity directly on the graph space is possible, it is also analytically complex. In particular, since most graph distances are non-metric, the resulting non-Euclidean geometry of the space is often unknown, making it quite harder to apply standard statistical tools. Even if we consider better-behaved metric distances, the computational complexity of dealing with the graph space is often intractable.<br />
+A common approach to circumvent this issue, then, is to represent the graphs in a simpler space via graph embedding.</p>
+
+<h2 id="enter-representation-learning">Enter representation learning</h2>
+
+<p>The key idea behind our approach is the following: we train a <a href="https://arxiv.org/abs/1802.03480">graph autoencoder</a> to extract a representation of the graphs on a somewhat simpler space, so that all the well known statistical tools for change detection become available for us to use.<br />
+However, since we already noted that graphs do not naturally lie in Euclidean spaces, we can look for a better embedding space, which can intrinsically represent some of the non-trivial properties of the space of graphs.</p>
+
+<p>Since non-Euclidean geometry is basically any relaxation of the Euclidean one, we can freely pick our favorite non-Euclidean embedding space, where a desirable property of this space is to have computationally tractable metric distances, and a simple analytical form to make calculations easier.</p>
+
+<p>A good family of spaces that reflect these characteristics is the family of <em>constant curvature Riemannian manifolds</em> (CCMs): hyperspheres and hyperboloids.</p>
+
+<h2 id="algorithm-overview">Algorithm overview</h2>
+<p>Let’s take a global view of the algorithm before diving into the details. The important steps are:</p>
+
+<ol>
+  <li>Take a sequence of nominal graphs</li>
+  <li>Train the AE to embed the graphs on a CCM</li>
+  <li>Take a stream of graphs that <em>may</em> eventually change to the non-nominal regime</li>
+  <li>Use the encoder to map the stream to the CCM</li>
+  <li>Run a change detection test on the CCM to identify changes the stream</li>
+</ol>
+
+<p>The sequence of graphs in step 1 is also mapped to the CCM and used to configure the change detection test (more on that later).<br />
+In a real-world scenario, step 3 is the stream of graphs observed by the algorithm after being deployed, where we have no information on the real state of the system. To test our methodology, however, we consider a stream of graphs with a known change point, and use it as ground truth to evaluate performance.</p>
+
+<h2 id="adversarial-graph-autoencoder">Adversarial Graph Autoencoder</h2>
+
+<p><img src="http://localhost:4000/images/2018-06-07/scheme.png" alt="Full architecture" class="full-width" /></p>
+
+<p>Building an autoencoder that maps the data distribution to a CCM requires imposing some sort of constraint on the latent space of the network, either by explicitly constraining the representation (e.g. by projecting the embeddings onto the CCM), or by letting the AE learn a representation on a CCM autonomously.<br />
+In our approach, we choose a mix of the two solutions: first, we let the AE learn a representation that lies as close as possible to the CCM, and then (once we’re sure that the projection will not introduce too much bias) we rectify the embeddings by clipping them onto the surface of the CCM.</p>
+
+<p>To impose an implicit constraint on the representation, we resort to the <a href="https://arxiv.org/abs/1511.05644">adversarial autoencoder</a> framework, where we take a more GAN-like approach and only use the encoder as the generator, ignoring the decoder. 
+We define a prior distribution with support on the CCM, by mapping an equivalent Euclidean distribution onto the CCM via the <a href="https://en.wikipedia.org/wiki/Exponential_map_(Riemannian_geometry)">Riemannian exponential map</a>, and we then match the aggregated posterior of the AE with this prior.</p>
+
+<p>This has the twofold effect of 1) implicitly defining the embedding surface that the AE has to learn in order to confuse the discriminator network, and 2) making the AE use all of the latent space uniformly.</p>
+
+<p>Using this <em>CCM prior</em> is the simplest modification to the standard AAE framework that we can make to impose the geometric constraint on the latent space, but in general we may want to drop the statistical conditioning of the posterior and find ways to let the AE learn the representation on the CCM freely. 
+To do this, we introduce an analytical <em>geometric discriminator</em>.</p>
+
+<h2 id="geometric-discriminator">Geometric discriminator</h2>
+
+<p>If we ignore the statistical conditioning of the AE’s posterior, we are left with the task of simply placing the embeddings onto the CCM. 
+Since we already defined a training framework for the AE that relies on adversarial learning, we can stick to this methodology and slightly change it to fit our new, relaxed requirements.</p>
+
+<p>The key idea behind adversarial networks is that both the generator and the discriminator strive to be better against each other, but what if the discriminator were already the best possible discriminator that may ever exist? What if the discriminator only had to compute a known classification function, without learning it? <br />
+This is the idea behind the geometric discriminator.</p>
+
+<p><img src="http://localhost:4000/images/2018-06-07/geom_critic.png" alt="Geometric critic" class="full-width" /></p>
+
+<p>We consider a function <script type="math/tex">D_\kappa(\vec z)</script> depending on the curvature <script type="math/tex">\kappa \ne 0</script> of the CCM, where:</p>
+
+<script type="math/tex; mode=display">D_{\kappa}(\vec z) = 
+    \mathrm{exp}\left(\cfrac{-\big( \langle \vec z, \vec z \rangle - \frac{1}{\kappa} \big)^2}{2\varsigma^2}\right)</script>
+
+<p>which intuitively takes samples <script type="math/tex">\vec z</script> from the latent space and computes their <em>membership</em> to the CCM.<br />
+When optimized to fool the geometric discriminator, the AE will learn to place its codes on the CCM, while at the same time being free to choose the best latent representation to optimize the reconstruction loss. <br />
+In principle, we could argue that this formulation is equivalent to imposing a regularization term during the optimization of the AE, but experimental results showed us that separating the reconstruction and regularization phases yielded more stable and more effective results.</p>
+
+<h2 id="change-detection-tests-for-ccms">Change detection tests for CCMs</h2>
+
+<p>Having defined a way to represent our graph stream on a manifold with better geometrical properties than the simple Euclidean space, we now have to run the change detection test on the embedded stream of graphs.</p>
+
+<p>Our change detection test is built upon the CUmulative SUMs algorithm (dating back to the 50’s), which basically consists in monitoring a generic stream of points by taking sequential windows of them, computing some <em>local statistic</em> across each window, and summing up the local statistics in a <em>global accumulator</em>.<br />
+The algorithm raises an <em>alarm</em> every time that the accumulator exceeds a particular <em>detection threshold</em> (and the accumulator is reset to 0 after that).<br />
+Using the (embedded) training graphs, we set the threshold such that the probability of the accumulator exceeding the threshold in the nominal regime is a given value <script type="math/tex">\alpha</script>.
+Once the threshold is set, we monitor the operational stream, knowing that any detection rate above <script type="math/tex">\alpha</script> will likely be associated to a change in the process.</p>
+
+<p>Since the detection threshold is set by statistically studying the accumulator, we can estimate it by knowing the distribution of the local statistics that make up the accumulator. To do this, we consider as local statistic the Mahalanobis distance between the mean of the training samples and the mean of the operational window, which thanks to the central limit theorem has a known distribution.</p>
+
+<p>So now we have outlined a change detection test for a generic stream, but where does non-Euclidean geometry come into play? In the paper we propose two different approaches to exploit it, both consisting in picking different ways to build the stream that is monitored by the CUSUM test.</p>
+
+<p><strong>Distance-based CDT (D-CDT)</strong>: we take the training stream of nominal graphs and compute the <em>Fréchet mean</em> of the points on the CCM; for each embedding in the operational stream, then, we compute the geodesic distance between the mean and the embedding itself. This results in the stream of embeddings being mapped to a stream of distances, which we then monitor with the CUSUM-based algorithm described above.</p>
+
+<p><strong>Riemannian CLT-based CDT (R-CDT)</strong>: here we take a slightly more geometrical approach, where instead of considering the Euclidean CLT we take the <em>Riemannian CLT</em> proposed by <a href="https://arxiv.org/abs/1801.00898">Bhattacharya and Lin</a>, which works directly for points on a Riemannian manifold and modifies the Mahalanobis distance to deal with the non-Euclidean geometry. In short, the approach considers a stream of points obtained by mapping the CCM-embedded graphs to a tangent plane using the Riemannian log-map, and computes the detection threshold using the modified local statistic.</p>
+
+<p>This might seem like a lot to deal with, but worry not: <a href="https://github.com/dan-zam/cdg">there’s a public repo to do this stuff for you</a>.</p>
+
+<h2 id="combined-ccms">Combined CCMs</h2>
+
+<p>As final touch, some considerations on what CCM to pick for embedding the graph stream.<br />
+In general, there are infinite curvatures to choose from, but we really only need to worry about the sign of the curvature, because that’s what determines whether the space is spherical or hyperbolic (or even Euclidean, if we set the curvature to 0).</p>
+
+<p>Different problems may benefit from different geometries, depending on the task-specific distances that determine the geometry of the original space of graphs (for instance, MNIST - yes, images are graphs too - <a href="https://arxiv.org/abs/1804.00891">has been shown</a> to do well on spherical manifolds).<br />
+But how can know whether a sphere or an hyperboloid is the best fit for a problem? How do we know that the Euclidean space isn’t actually the best one? 
+In principle, we could train an AE for each manifold and test the performance of the algorithm, but what if we don’t have enough data to get reliable results? What if have too much, and training is expensive?</p>
+
+<p>A fairly trivial, but effective solution is to not pick just <em>one</em> manifold (pfffft!), but pick ALL of them at the same time and learn a joint representation.
+Formally, we consider an <em>ensemble manifold</em> as the Cartesian product of different CCMs, and slightly adapt our architecture accordingly (essentially we take the relevant building blocks of our pipeline and put them in parallel, with some shared convolutions here and there - check Section 3.3 of the paper for details).<br />
+Since the actual values of the curvatures are less important than their signs, we can take only three CCMs to build our ensemble: a spherical CCM of curvature 1, an hyperbolic CCM of curvature -1, and an Euclidean CCM of curvature 0.</p>
+
+<h2 id="experiments">Experiments</h2>
+
+<p>To validate our methodology, we ran experiments in two different settings: a synthetic, controlled one, and a real-world scenario of epileptic seizure detection.</p>
+
+<p><img src="http://localhost:4000/images/2018-06-07/delaunay.png" alt="Delaunay triangulations" class="full-width" /></p>
+
+<p>For the synthetic scenario, we considered graphs obtained as the <a href="https://en.wikipedia.org/wiki/Delaunay_triangulation">Delaunay triangulations</a> of points in a plane (pictured above), where we controlled the change in the stream by adding perturbations of different intensity to the support points of the graphs.</p>
+
+<p><img src="http://localhost:4000/images/2018-06-07/ieeg.png" alt="iEEG data" class="full-width" /></p>
+
+<p>For the seizure detection scenario, we considered Kaggle’s <a href="https://www.kaggle.com/c/seizure-detection">UPenn and Mayo Clinic’s Seizure Detection Challenge</a> and <a href="https://www.kaggle.com/c/seizure-prediction">American Epilepsy Society Seizure Prediction Challenge</a> datasets, composed of iEEG signals for different human and dog patients, with a different number of electrodes attached to each patient resulting in different multivariate signals. <br />
+The signals are provided in 1-second i.i.d. clips of different classes (the nominal <em>interictal</em> states where the patient is fine, and the non-nominal <em>ictal</em> states where the patient is having a seizure), for each patient, and the original task of the challenge is to classify the clips correctly.<br />
+Since a common approach in neuroscience to deal with iEEG data is to build <a href="https://www.frontiersin.org/articles/10.3389/fnsys.2015.00175/full">functional connectivity networks</a> to study the relationships between different areas of the brain, especially during rare episodes like seizures, this task was the perfect playground to test our complex methodology. 
+We converted each 1-second clip to a graph using Pearson’s correlation as functional connectivity measure, and the topmost 4 wavelet coefficients of each signal as node attributes.<br />
+To simulate the graph streams, we used the labeled training data from the challenges to build the training and operational streams for each patient, where a change in the stream simply consisted in sampling graphs from the ictal class instead of the nominal.</p>
+
+<h3 id="results-in-short">Results in short</h3>
+
+<p>The important aspects that emerged after the experimental phase are the following:</p>
+
+<ol>
+  <li>The ensemble of CCM, with the geometric critic, and R-CDT is the most effective change detection architecture among the ones tested (which included a purely Euclidean AE and a non-neural baseline for embedding graphs). This highlights how the AE is encoding different, yet useful information on the different CCMs;</li>
+  <li>Exclusively spherical and hyperbolic AEs are relevant in some rare cases;</li>
+  <li>Using the geometric discriminator often yields a better performance w.r.t. the standard discriminator, while reducing the number of trainable parameters by up to 13%;</li>
+  <li>We are able to detect extremely small changes (in the order of <script type="math/tex">10^{-3}</script>) in the distribution driving the Delaunay stream;</li>
+  <li>We are able to detect changes in both the iEEG detection and prediction challenges with good accuracy in most cases, except for a couple of patients for which we see an accuracy drop;</li>
+  <li>The model does not require excessive hyperparameter tuning in order to perform well; a single configuration is good in most cases.</li>
+</ol>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>All methods introduces in this work can go beyond the limited application scenario that we reported in the paper. 
+Our aim was to introduce a new framework to deal with graphs on a global level, so as to make it possible to study the process underlying a graph-based problem as a whole.<br />
+The proposed techniques are modular and fairly generic: the adversarially regularized graph AE can be used to map graphs on CCMs for other tasks, and the embedding technique for CCMs can be used with other autoencoders and other data distributions. The change detection tests are a bit more specific, but represent a nice application of our new framework on relevant use cases.</p>
+
+<p>We’re already working on new applications of this framework, to showcase what we believe to be a great potential, so stay tuned!</p>
+
+<h2 id="credits">Credits</h2>
+
+<p>Code for replicating our experiments will be published on <a href="https://github.com/danielegrattarola">my Github</a>
+soon.<br />
+If you wish to cite this work, you can refer to the Arxiv preprint for now:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>@article{grattarola2018learning,
+  title={Learning Graph Embeddings on Constant-Curvature Manifolds for Change Detection in Graph Streams},
+  author={Grattarola, Daniele and Zambon, Daniele and Alippi, Cesare and Livi, Lorenzo},
+  journal={arXiv preprint arXiv:1805.06299},
+  year={2018}
+}
+</code></pre>
+</div>
+
+            </div>  
+
+            <!--- DIVIDING LINE -->
+            <hr>
+    
+            <!-- POST TAGS -->
+            <div class="inline-tags">
+                <span>
+                    
+                        <a href="/tags/#AI">#AI&nbsp;&nbsp;&nbsp;</a>
+                    
+                        <a href="/tags/#tutorial">#tutorial&nbsp;&nbsp;&nbsp;</a>
+                    
+                </span>
+            </div>
+          
+            <br>
+            
+            <!-- POST DATE -->
+            <div class="post-date">
+                JUNE 7, 2018
+            </div>
+        </article>
+    </div>
+</body>
+    
+<!-- FOOTER -->  
+<footer>  
+    <div class="footer-wrapper">
+        <footer role="contentinfo">
+            <span>
+    &copy; 2018 Daniele Grattarola | <a href="/feed.xml">RSS feed</a><br>Powered by <a target="_blank" href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a target="_blank" href="https://github.com/nathanrooy/Clean-and-Simple-Jekyll-Theme">Clean+Simple</a> theme.
+</span>
+
+        </footer>
+    </div>   
+</footer> 
+
+<!-- ANALYTICS -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-101322989-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</html>

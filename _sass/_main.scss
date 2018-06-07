@@ -41,6 +41,47 @@ a {
 	}
 }
 
+/*--- MAIN CONTENT ----------------------------------------------------------*/
+
+.entry-content {
+    font-size: 18px;
+    line-height: 1.7em;
+
+    a {
+    	text-decoration: underline !important;
+    }
+}
+
+.main-header-image {
+    img {
+        @media #{$large} {
+			max-width: $column-width;
+		}
+    }
+}
+
+.post-date {
+    font-size: 12px;
+	text-transform: uppercase;
+    color: lighten($base-color,50);
+
+	a {
+		color: lighten($base-color,50);
+	}
+    
+    a:hover{
+        color: lighten($base-color,20);
+    }
+}
+
+header .entry-meta {
+	display: none; // hide header meta on small screens
+
+	@media #{$medium} {
+		display: block;
+	}
+}
+
 /*---- NAVBAR --------------------------------------------------------------*/
 .brand{
 	float: left;
@@ -266,47 +307,6 @@ svg:not(:root) {
     &:hover {
         color: $base-color;
     }
-}
-
-/*--- MAIN CONTENT ----------------------------------------------------------*/
-
-.entry-content {
-    font-size: 18px;
-    line-height: 1.7em;
-
-    a {
-    	text-decoration: underline !important;
-    }
-}
-
-.main-header-image {
-    img {
-        @media #{$large} {
-			max-width: $column-width;
-		}
-    }
-}
-
-.post-date {
-    font-size: 12px;
-	text-transform: uppercase;
-    color: lighten($base-color,50);
-
-	a {
-		color: lighten($base-color,50);
-	}
-    
-    a:hover{
-        color: lighten($base-color,20);
-    }
-}
-
-header .entry-meta {
-	display: none; // hide header meta on small screens
-
-	@media #{$medium} {
-		display: block;
-	}
 }
 
 /*--- POST INDEX ------------------------------------------------------------*/
