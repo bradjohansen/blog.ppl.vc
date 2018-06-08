@@ -19,7 +19,7 @@ Some of these require people to drop their ancient, stone-engraved practices and
 
 The three main areas that I'll cover are:
 
-- How to deal with code, so that anyone will be able to reproduce the stuff you did and (this is a crazy one) _understand what you did by looking at the code_;
+- How to deal with code, so that anyone will be able to reproduce the stuff you did and understand what you did by looking at the code;
 - How to deal with data, so that good ol' Bob will not only stop using Telegram as a storage server, but will also stop storing data in that obscure standard from 1997;
 - How to deal with logs, so that every piece of information needed to replicate an experiment will be stored somewhere, and you won't need to run a mental Git tree to remember every little change that the project underwent in the previous 6 months.
 
@@ -87,7 +87,7 @@ It's difficult to formalize this rule properly, so here are some examples:
 I realize this is all a bit vague, so I'll just summarize it as "stick to the plan" and shamelessly leave you to learn from experience.
 
 __6. Don't add a dependency if you'll only use it once__  
-This could have actually been an example of Rule 6, but I've seen too many atrocities in this regard to not make it into a rule.  
+This could have actually been an example of Rule 5, but I've seen too many atrocities in this regard to not make it into a rule.  
 Sometimes it will be absolutely tempting to use a library with which you have experience to do a single task, and you will want to import that library "just this once" to get done with it.  
 This quickly leads to [dependency hell](https://en.wikipedia.org/wiki/Dependency_hell) and puts Rule 2 in danger, so try to avoid it at all costs.   
 Examples of this include using Pandas because you are not confident enough with Numpy's slicing, or importing Seaborn because Matplotlib will require some grinding, or copy-pasting that two-LOC solution from StackOverflow.  
@@ -136,7 +136,7 @@ Keep it as simple, as standard, and as modern as possible.
 And remember: it's better to convert data once, and then read from the chosen standard format, rather than converting at runtime, every time.
 
 __2. Drop the Dropbox__   
-Dropbox and Google Drive are consumer-oriented platforms that are specifically designed to help the average user have a simple and effective experience with cloud storage. They surely can be used as backend for more technical situations through the use of command line, but in the end they will bring you down to integration hell and keep you there forever.  
+Dropbox and Google Drive are consumer-oriented platforms that are specifically designed to help the average user have a simple and effective experience with cloud storage. They surely can be used as backend for more technical situations through the use of command line, but in the end they will bring you down to hell and keep you there forever.  
 Here's a short list of tools and tips for cloud storage and data handling that I have used in the past as alternative to the big D (no pun intended).  
 
 Data storage:
@@ -203,26 +203,16 @@ def log(string, print_string=True):
 
 # Log hyperparameters
 log(__file__)
-vars_to_log = ['SEED', 'latent_space', 'learning_rate', 'beta_1', 'epochs', 
-	       'batch_size', 'es_patience', 'classes', 'optimizer', 'loss']
-vars_string = 'Setting:\n'
-for v in vars_to_log:
-    vars_string += '- {}: {}\n'.format(v, str(eval(v)))
-log(vars_string)
+vars_to_log = ['learning_rate', 'epochs', 'batch_size', 'optimizer', 'loss']
+log(''.join('- {}: {}\n'.format(v, str(eval(v))) for v in vars_to_log))
 ```
 
 which will give you a neat and tidy: 
 ```
 /path/to/file/run.py
-Setting: 
-- SEED: 1337 
-- latent_space: 128 
 - learning_rate: 1e-3
-- beta_1: 0.99
 - epochs: 100 
-- batch_size: 32 
-- es_patience: 10
-- classes: 2
+- batch_size: 32
 - optimizer: 'adam' 
 - loss: 'binary_crossentropy'		   
 ```
@@ -245,7 +235,7 @@ Sometimes, I've seen people copy-pasting entire scripts in the output folder of 
 __3. Plots before logs__  
 We do science to show our findings to the world, the other members of our team, or at the very least to our bosses and supervisors.  
 This means that the best results that you may obtain in a project instantly lose their value if you cannot communicate properly what you found, and in 2018 that means that you have to learn how to use data visualization techniques.   
-[Books](https://www.amazon.com/Visual-Display-Quantitative-Information/) have been written on the subject, so I won't go into details here. 
+[Books](https://www.edwardtufte.com/tufte/books_vdqi) have been written on the subject, so I won't go into details here. 
 Just remember that a good visualization always trumps a series of unfriendly floats floating around.  
 Some general tips on how to do data viz:
 - label your axes;
