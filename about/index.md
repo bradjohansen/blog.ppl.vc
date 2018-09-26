@@ -39,7 +39,7 @@ My home away from home is in Ibiza, where I go every summer to get lost in natur
         </a>
     </span>
     <br><a target="_blank" href="/files/Daniele_Grattarola_resume.pdf">Résumé</a>
-    <br><span style='font-size: 14px;'>ETH: <a href="0x8c4641e3EEdd08D5975cb2B5c67650eeD6B03656</a></span>
+    <br><span style='font-size: 14px;'>ETH: <a href="0x8c4641e3EEdd08D5975cb2B5c67650eeD6B03656"</a></span>
 </center>
 
 <br>
@@ -49,7 +49,6 @@ My home away from home is in Ibiza, where I go every summer to get lost in natur
     <img src="/images/about/2.jpg" style="grid-column: 1; overflow:hidden;">
     <img src="/images/about/3.jpg" style="grid-column: 2;">
     <img src="/images/about/4.jpg" style="grid-column: 1 / span 2;">
-    <img src="/images/about/5.jpg" style="grid-column: 1 / span 2;">
 </center>
 
 <!-- SVG-->
