@@ -5,19 +5,19 @@ image: /images/about/1.jpg
 ---
 
 <p>
-I am a Ph.D. student in machine learning at Università della Svizzera Italiana (Lugano, CH), part of the Advanced Learning and Research Institute (ALaRI). 
+I am a Ph.D. student in machine learning at Università della Svizzera Italiana (Lugano, CH), part of the Advanced Learning and Research Institute. 
 I graduated <em>magna cum laude</em> in Computer Science and Engineering at Politecnico di Milano in October 2017. 
 <br>
-My research focuses on geometric deep learning and reinforcement learning for change detection, diagnostics, and control of dynamic systems described by time-variant graphs.
+My research focuses on graph neural networks, non-Euclidean geometry, epilepsy, and reinforcement learning.
 </p>
 
 <p>
-I am a bicycle revolution supporter, ukulele player, red cat owner, avid reader, series addict, and worldwide traveler. 
+I am a bicycle revolutionist, ukulele player, avid reader, series addict, and worldwide traveler. 
 <br>
-My second home is in Ibiza, where I go every summer to get lost in nature and find myself again.
+My home away from home is in Ibiza, where I go every summer to get lost in nature and find myself again.
 </p>
 
-<span>The purpose of this website is to leave a trace of my ideas, my work, and my experiences.</span>
+<span>The purpose of this website is to leave a trace of my ideas, my work, and my experience.</span>
 
 <br>
 <br>
@@ -39,7 +39,7 @@ My second home is in Ibiza, where I go every summer to get lost in nature and fi
         </a>
     </span>
     <br><a target="_blank" href="/files/Daniele_Grattarola_resume.pdf">Résumé</a>
-    <br><span style='font-size: 14px;'>BTC address: <a href="bitcoin:1KLyYmceVcs1kXWkUcwrQBGrZymc85scXa">1KLyYmceVcs1kXWkUcwrQBGrZymc85scXa</a></span>
+    <br><span style='font-size: 14px;'>ETH: <a href="0x8c4641e3EEdd08D5975cb2B5c67650eeD6B03656</a></span>
 </center>
 
 <br>
@@ -49,6 +49,7 @@ My second home is in Ibiza, where I go every summer to get lost in nature and fi
     <img src="/images/about/2.jpg" style="grid-column: 1; overflow:hidden;">
     <img src="/images/about/3.jpg" style="grid-column: 2;">
     <img src="/images/about/4.jpg" style="grid-column: 1 / span 2;">
+    <img src="/images/about/5.jpg" style="grid-column: 1 / span 2;">
 </center>
 
 <!-- SVG-->
