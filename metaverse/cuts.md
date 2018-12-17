@@ -1,6 +1,6 @@
 ---
 layout: metaverse
-title: ｃｕｔｓ
+title: cuts
 image: /images/metaverse/1.jpg
 extra_css: 
     - css/base.css

@@ -1,6 +1,6 @@
 ---
 layout: metaverse
-title: ｄｅｅｐ　ｓｅａ
+title: deep sea
 image: /images/metaverse/1.jpg
 extra_css: 
     - css/base.css

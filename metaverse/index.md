@@ -1,6 +1,6 @@
 ---
 layout: metaverse
-title: ｍｅｔａｖｅｒｓｅ
+title: metaverse
 image: /images/metaverse/1.jpg
 extra_css:
   - css/base.css
@@ -9,8 +9,12 @@ extra_css:
 <div class='home-container'>
 	<div id="wrapper">
       <canvas id="stage" height="300"></canvas>
-    </div>
-    <div class="box">
+  </div>
+  a post-futuristic meta-memetic vapor-cyber generative outlet for the lost divers
+  <br>
+  <br>
+  <br>
+  <div class="box">
     	<a href="/" class='home-a'>home</a>
 			<br>
 			<br>
@@ -23,8 +27,13 @@ extra_css:
       <a href="deep-sea.html" class='home-a'>deep sea</a>
       <br>
       <br>
+      <a href="findme.html" class='home-a'>./find_me</a>
+      <br>
+      <br>
+      <a href="illyousion.html" class='home-a'>ill(you)sion</a>
+      <br>
+      <br>
 	</div>
-
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js"></script>

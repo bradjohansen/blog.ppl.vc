@@ -1,6 +1,6 @@
 ---
 layout: metaverse
-title: ｂｒｅａｔｈｅ
+title: breathe
 image: /images/metaverse/1.jpg
 extra_css: 
     - css/base.css
