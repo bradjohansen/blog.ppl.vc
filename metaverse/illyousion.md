@@ -6,7 +6,7 @@ extra_css:
     - css/base.css
 ---
 
-<p class="header">./find_me</p>
+<p class="header">ill(you)sion</p>
 
 <div class="container">
 <img src="/images/metaverse/illyousion.jpg" style="width: 100%;"/>
