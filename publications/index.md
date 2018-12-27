@@ -9,7 +9,7 @@ image: /images/header/publications.png
 </center>
 <br>
 
-<a target="_blank" href="https://arxiv.org/abs/1805.06299">Adversarial Autoencoders with Constant-Curvature Latent Manifolds.</a>
+<a target="_blank" href="https://arxiv.org/abs/1812.04314">Adversarial Autoencoders with Constant-Curvature Latent Manifolds.</a>
 <br>
 D. Grattarola, L. Livi, C. Alippi.
 <br>
