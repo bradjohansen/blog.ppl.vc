@@ -9,28 +9,35 @@ image: /images/header/publications.png
 </center>
 <br>
 
-<a target="_blank" href="https://arxiv.org/abs/1812.04314">Adversarial Autoencoders with Constant-Curvature Latent Manifolds.</a>
+<a href="https://arxiv.org/abs/1901.01343">Graph Neural Networks with Convolutional ARMA Filters.</a>
+<br>
+F. M. Bianchi, D. Grattarola, L. Livi, C. Alippi.
+<br>
+Under review (2019).
+<br><br>
+
+<a href="https://arxiv.org/abs/1812.04314">Adversarial Autoencoders with Constant-Curvature Latent Manifolds.</a>
 <br>
 D. Grattarola, L. Livi, C. Alippi.
 <br>
 Under review (2018).
 <br><br>
 
-<a target="_blank" href="https://arxiv.org/abs/1805.06299">Change Detection in Graph Streams by Learning Graph Embeddings on Constant-Curvature Manifolds.</a>
+<a href="https://arxiv.org/abs/1805.06299">Change Detection in Graph Streams by Learning Graph Embeddings on Constant-Curvature Manifolds.</a>
 <br>
 D. Grattarola, D. Zambon, C. Alippi, L. Livi.
 <br>
 Under review (2018).
 <br><br>
 
-<a target="_blank" href="/files/publications/2017_10_grattarola_master_thesis.pdf">Deep Feature Extraction for Sample-Efficient Reinforcement Learning.</a>
+<a href="/files/publications/2017_10_grattarola_master_thesis.pdf">Deep Feature Extraction for Sample-Efficient Reinforcement Learning.</a>
 <br>
 D. Grattarola.
 <br>
 Master's thesis (2017).
 <br><br>
 
-<a target="_blank" href="/files/publications/2017_grattarola_recsys.pdf">Content-Based Approaches for Cold-Start Job Recommendations.</a>
+<a href="/files/publications/2017_grattarola_recsys.pdf">Content-Based Approaches for Cold-Start Job Recommendations.</a>
 <br>
 M. Bianchi, F. Cesaro, F. Ciceri, M. Dagrada, A. Gasparin, D. Grattarola, I. Inajjar, A. M. Metelli, L. Cella.
 <br>
