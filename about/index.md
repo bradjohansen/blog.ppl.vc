@@ -8,16 +8,16 @@ image: /images/about/1.jpg
 I am a Ph.D. student in machine learning at Università della Svizzera Italiana (Lugano, CH), part of the Advanced Learning and Research Institute. 
 I graduated <em>magna cum laude</em> in Computer Science and Engineering at Politecnico di Milano in October 2017. 
 <br>
-My research focuses on graph neural networks, non-Euclidean geometry, epilepsy, and reinforcement learning.
+My research interests include graph neural networks, non-Euclidean geometry, epilepsy, and reinforcement learning.
 </p>
 
 <p>
-I am a bicycle revolutionist, ukulele player, avid reader, series addict, and worldwide traveler. 
+I like getting lost in nature, travelling around by bike, playing the guitar, and creating websites/pics/music.
 <br>
-My home away from home is in Ibiza, where I go every summer to get lost in nature and find myself again.
+Power places: Eivissa, Kyōto, Queensland. Currently studying Japanese and neuroscience. 
 </p>
 
-<span>The purpose of this website is to leave a trace of my ideas, my work, and my experience.</span>
+The purpose of this website is to leave a trace of my ideas, my work, and my experience.
 
 <br>
 <br>
