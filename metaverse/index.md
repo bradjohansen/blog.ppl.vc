@@ -33,6 +33,9 @@ extra_css:
       <a href="illyousion.html" class='home-a'>ill(you)sion</a>
       <br>
       <br>
+      <a href="sudo_rm_r_self.html" class='home-a'>sudo rm -r self</a>
+      <br>
+      <br>
 	</div>
 </div>
 
