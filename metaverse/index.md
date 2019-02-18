@@ -10,7 +10,6 @@ extra_css:
 	<div id="wrapper">
       <canvas id="stage" height="300"></canvas>
   </div>
-  a post-futuristic meta-memetic vapor-cyber generative outlet for the lost divers
   <br>
   <br>
   <br>
