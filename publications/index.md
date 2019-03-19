@@ -9,6 +9,13 @@ image: /images/header/publications.png
 </center>
 <br>
 
+<a href="https://arxiv.org/abs/1903.07299">Autoregressive Models for Sequences of Graphs.</a>
+<br>
+D. Zambon, D. Grattarola, L. Livi, C. Alippi.
+<br>
+International Joint Conference on Neural Networks (2019).
+<br><br>
+
 <a href="https://arxiv.org/abs/1901.01343">Graph Neural Networks with Convolutional ARMA Filters.</a>
 <br>
 F. M. Bianchi, D. Grattarola, L. Livi, C. Alippi.
