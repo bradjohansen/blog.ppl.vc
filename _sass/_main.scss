@@ -265,6 +265,25 @@ svg:not(:root) {
     width: 100%
 }
 
+.threeq-width {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.half-width {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.half-left {
+    width: 50%;
+    align: left;
+}
+
 .image-grid {
     display: grid; 
     grid-auto-columns: 1fr 1fr; 

@@ -255,4 +255,4 @@ The only downside of this rule is that sometimes you'll find a bug or implement 
 This is far from a complete guide (probably far from a guide at all), and i realize that some of the rules are not even related to working in teams. I just wanted to put together a small set of practices that I picked up from people way more skilled than me, in the hope of making collaborations easier, simplifying the workflow of other fellow PhD students that are just beginning to work with code seriously, and eventually, hopefully, leading to a more standardized way of publishing ML research in the sake of reproducibility and democratization.  
 I am sure that many people will know better, smarter, more common practices that I am unaware of, so please do [contact me](https://danielegrattarola.github.io/about/) if you want to share some of your knowledge.  
 
-Cheers
+Cheers!

@@ -114,4 +114,3 @@ us back in our quiet neighborhood of probable but unverifiable truths.
 However, when considering the practically null amout of time that constitutes our
 lives, a question may come to one's mind: is it closer to human nature to 
 think of a God, or to seek one out?
-
