@@ -2,7 +2,7 @@
 layout: post
 categories: posts
 title: "Detecting Hostility from Skeletal Graphs Using Non-Euclidean Embeddings"
-image: /images/2019-04-13/embeddings.svg
+image: /images/header/publications.png
 tags: [AI, experiment, non-euclidean]
 date-string: APRIL 13, 2019
 ---
