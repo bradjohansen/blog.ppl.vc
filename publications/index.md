@@ -27,7 +27,7 @@ Under review (2019).
 <br>
 D. Grattarola, L. Livi, C. Alippi.
 <br>
-Under review (2018).
+Applied Soft Computing (2019).
 <br><br>
 
 <a href="https://arxiv.org/abs/1805.06299">Change Detection in Graph Streams by Learning Graph Embeddings on Constant-Curvature Manifolds.</a>
