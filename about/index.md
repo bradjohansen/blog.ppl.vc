@@ -4,20 +4,17 @@ title: About
 image: /images/about/1.jpg
 ---
 
-<p>
-I am a Ph.D. student in machine learning at Università della Svizzera Italiana (Lugano, CH), part of the Advanced Learning and Research Institute. 
-I graduated <em>magna cum laude</em> in Computer Science and Engineering at Politecnico di Milano in October 2017. 
+I am a Ph.D. student in machine learning at Università della Svizzera Italiana (Lugano, Switzerland).
+My research focuses on predicting and controlling anomalies on graphs. 
 <br>
-My research interests include graph neural networks, non-Euclidean geometry, epilepsy, and reinforcement learning.
-</p>
+I mostly work on graph neural networks, reinforcement learning, and epilepsy. 
 
-<p>
-I like getting lost in nature, travelling around by bike, playing the guitar, and creating websites/pics/music.
 <br>
-Power places: Eivissa, Kyōto, Queensland. Currently studying Japanese and neuroscience. 
-</p>
+<br>
 
-The purpose of this website is to leave a trace of my ideas, my work, and my experience.
+I like getting lost in nature, travelling around by bike, playing the guitar, and creating websites/pics/music.  
+<br>
+Power places: Eivissa | Kyōto | Queensland.
 
 <br>
 <br>

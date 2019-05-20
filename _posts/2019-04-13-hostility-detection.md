@@ -47,7 +47,7 @@ Applications of this could include:
 - detecting violence in at-risk, crowded situations;
 - detecting when a driver is distracted;
 
-In all of these situations, you might have a pretty good idea of you _want_ to be happening at a given time, but have no way of knowing how things could go wrong. 
+In all of these situations, you might have a pretty good idea of what you _want_ to be happening at a given time, but have no way of knowing how things could go wrong. 
 
 We chose the "hugging" action for the nominal, all-is-well regime, and we took the "punching/slapping" class to symbolize any unexpected, undesirable behaviour that deviates from our concept of nominal.
 Then, we trained our adversarial autoencoder to represent points on an ensemble of constant-curvature manifolds, and we ran the change detection test. 
