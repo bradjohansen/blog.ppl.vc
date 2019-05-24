@@ -28,6 +28,8 @@ Under review (2019).
 D. Grattarola, L. Livi, C. Alippi.
 <br>
 Applied Soft Computing (2019).
+<br>
+DOI: <a href="https://doi.org/10.1016/j.asoc.2019.105511">10.1016/j.asoc.2019.105511</a>
 <br><br>
 
 <a href="https://arxiv.org/abs/1805.06299">Change Detection in Graph Streams by Learning Graph Embeddings on Constant-Curvature Manifolds.</a>
@@ -50,5 +52,5 @@ M. Bianchi, F. Cesaro, F. Ciceri, M. Dagrada, A. Gasparin, D. Grattarola, I. Ina
 <br>
 Proceedings of the ACM Recsys Challenge (2017).
 <br>
-DOI: <a href="http://dx.doi.org/10.1145/3124791.3124793">10.1145/3124791.3124793</a>
+DOI: <a href="https://doi.org/10.1145/3124791.3124793">10.1145/3124791.3124793</a>
 <br><br>
