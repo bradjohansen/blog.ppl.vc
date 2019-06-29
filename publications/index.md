@@ -34,9 +34,9 @@ DOI: <a href="https://doi.org/10.1016/j.asoc.2019.105511">10.1016/j.asoc.2019.10
 
 <a href="https://arxiv.org/abs/1805.06299">Change Detection in Graph Streams by Learning Graph Embeddings on Constant-Curvature Manifolds.</a>
 <br>
-D. Grattarola, D. Zambon, C. Alippi, L. Livi.
+D. Grattarola, D. Zambon, L. Livi, C. Alippi.
 <br>
-Under review (2018).
+IEEE Transactions on Neural Networks and Learning Systems (2019).
 <br><br>
 
 <a href="/files/publications/2017_10_grattarola_master_thesis.pdf">Deep Feature Extraction for Sample-Efficient Reinforcement Learning.</a>
