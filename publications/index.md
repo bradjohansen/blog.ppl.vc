@@ -9,7 +9,7 @@ image: /images/header/publications.png
 </center>
 <br>
 
-<a href="https://arxiv.org/abs/1907.00481">Mincut pooling in Graph Neural Networks.</a>
+<a href="https://arxiv.org/abs/1907.00481">Mincut Pooling in Graph Neural Networks.</a>
 <br>
 F. M. Bianchi, D. Grattarola, C. Alippi.
 <br>
@@ -44,6 +44,8 @@ DOI: <a href="https://doi.org/10.1016/j.asoc.2019.105511">10.1016/j.asoc.2019.10
 D. Grattarola, D. Zambon, L. Livi, C. Alippi.
 <br>
 IEEE Transactions on Neural Networks and Learning Systems (2019).
+<br>
+DOI: <a href="https://doi.org/10.1109/TNNLS.2019.2927301">10.1109/TNNLS.2019.2927301</a>
 <br><br>
 
 <a href="/files/publications/2017_10_grattarola_master_thesis.pdf">Deep Feature Extraction for Sample-Efficient Reinforcement Learning.</a>
