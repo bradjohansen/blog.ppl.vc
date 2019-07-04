@@ -9,6 +9,13 @@ image: /images/header/publications.png
 </center>
 <br>
 
+<a href="https://arxiv.org/abs/1907.00481">Mincut pooling in Graph Neural Networks.</a>
+<br>
+F. M. Bianchi, D. Grattarola, C. Alippi.
+<br>
+Preprint (2019).
+<br><br>
+
 <a href="https://arxiv.org/abs/1903.07299">Autoregressive Models for Sequences of Graphs.</a>
 <br>
 D. Zambon, D. Grattarola, L. Livi, C. Alippi.
@@ -20,7 +27,7 @@ International Joint Conference on Neural Networks (2019).
 <br>
 F. M. Bianchi, D. Grattarola, L. Livi, C. Alippi.
 <br>
-Under review (2019).
+Preprint (2019).
 <br><br>
 
 <a href="https://arxiv.org/abs/1812.04314">Adversarial Autoencoders with Constant-Curvature Latent Manifolds.</a>
