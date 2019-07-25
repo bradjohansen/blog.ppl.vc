@@ -48,7 +48,11 @@ a {
     line-height: 1.7em;
 
     a {
-    	text-decoration: underline !important;
+    	text-decoration: none !important;
+    	border-bottom: solid 1px;
+    	display: inline;
+    	padding-bottom: 0px;
+    	/*font-weight: bold;*/
     }
 }
 

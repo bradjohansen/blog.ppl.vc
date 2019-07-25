@@ -87,14 +87,15 @@ In both pictures, the decision for raising an alarm is informed almost exclusive
 That's all, folks!  
 This was a pretty little experiment to run, and it gave us further insights into the world of non-Euclidean neural networks. We have actually [updated the paper](https://arxiv.org/abs/1805.06299) with the findings of this new experiment, and you can also try and play with our algorithm using the [code on Github](https://github.com/danielegrattarola/cdt-ccm-aae) (the code there is for the synthetic experiments of the paper, but you can adapt it to any dataset easily).
 
-We hope to get the paper published soon, but review cycles can be long. In the meantime, if you want to mention our CDT strategy in your work you can cite the arXiv version: 
+If you want to mention our CDT strategy in your work, you can cite: 
 
 ```
 @article{grattarola2018change,
   title={Change Detection in Graph Streams by Learning Graph Embeddings on Constant-Curvature Manifolds},
-  author={Grattarola, Daniele and Zambon, Daniele and Alippi, Cesare and Livi, Lorenzo},
-  journal={arXiv preprint arXiv:1805.06299},
-  year={2018}
+  author={Grattarola, Daniele and Zambon, Daniele and Livi, Lorenzo and Alippi, Cesare},
+  journal={IEE Transactions on Neural Networks and Learning Systems},
+  year={2019},
+  doi={10.1109/TNNLS.2019.2927301}
 }
 ```
 
