@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: posts
-title: "Implementing a network-based model of epilepsy with Numpy and Numba"
+title: "Implementing a Network-based Model of Epilepsy with Numpy and Numba"
 image: /images/2019-10-03/2_nodes_complex_plane.png
 tags: [tutorial, code, epilepsy]
 date-string: OCTOBER 03, 2019
