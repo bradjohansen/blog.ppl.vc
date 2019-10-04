@@ -265,6 +265,12 @@ svg:not(:root) {
   overflow: hidden; 
 }
 
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .full-width {
     width: 100%
 }
