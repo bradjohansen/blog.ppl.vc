@@ -25,7 +25,7 @@ $$
 $$
 
 where \\( z \in \mathbb{C} \\) and \\(\lambda\\) controls the possible attractors of the system. 
-For \\( 0 < \lambda < 1 \\), the system has two stable attractors: one fixed point and one oscillating attractor.  
+For \\( 0 < \lambda < 1 \\), the system has two stable attractors: one fixed point and one attractor that oscillates with an angular velocity of \\(\omega\\) rad/s.  
 We can consider the stable attractor as a simplification of the brain in its resting state, while the oscillating attractor is taken to be the *ictal* state (i.e., when the brain is having a seizure). 
 
 We can also consider a *noise-driven* version of the system: 
@@ -64,7 +64,7 @@ See how the change of attractor almost looks like an epileptic seizure?
 
 While this simple model of seizure initiation is interesting on its own, we can also take our modeling a step further and explicitly represent the connections between different areas of the brain (or sub-systems, if you will) and how they might affect the propagation of seizures from one area to the other. 
 
-We do this by defining a connectivity matrix \\( A \\) where \\( A\_{ij} = 1 \\) if sub-system \\( i \\) has a direct influence on sub-system \\( j \\), and is zero otherwise. In practice, we also normalize the matrix by dividing each row element-wise by the product of the square roots of the node's out-degree and in-degree.
+We do this by defining a connectivity matrix \\( A \\) where \\( A\_{ij} = 1 \\) if sub-system \\( i \\) has a direct influence on sub-system \\( j \\), and \\( A\_{ij} = 0 \\) otherwise. In practice, we also normalize the matrix by dividing each row element-wise by the product of the square roots of the node's out-degree and in-degree.
 
 Starting from the system described above, the dynamics of one node in the networked system are described by: 
 
@@ -90,15 +90,15 @@ If you want to have more details on how to control the different attractors of t
 
 Now that we got the math sorted out, let's look at how to translate this system in Numpy.  
 
-Since the system is so precisely defined, we only need translate the mathematical formulation into code. In short, we will need to implement: 
+Since the system is so precisely defined, we only need to convert the mathematical formulation into code. In short, we will need: 
 
 1. The core functions to compute the complex dynamical system;
 2. The main loop to compute the evolution of the system starting from an initial condition.
 
 While developing this, I quickly realized that my original, kinda straightforward implementation was painfully slow and that it would have required some optimization to be usable.  
 
-This was the perfect occasion to use [Numba](http://numba.pydata.org/), a JIT compiler for Python that claims to yield speedups up to two orders of magnitude.  
-Numba works out of the box to JIT compile any function implemented in pure Python, and natively supports a vast number of Numpy operations as well. 
+This was the perfect occasion to use [Numba](http://numba.pydata.org/), a JIT compiler for Python that claims to yield speedups of up to two orders of magnitude.  
+Numba can be used to JIT compile any function implemented in pure Python, and natively supports a vast number of Numpy operations as well. 
 The juicy part of Numba consists of compiling functions in `nopython` mode, meaning that the code will run without ever using the Python interpreter. 
 To achieve this, it is sufficient to decorate your functions with the `@njit` decorator and then simply run your script as usual. 
 
@@ -141,7 +141,7 @@ def normalized_adjacency(adj):
 
 The code for these functions was copy-pasted from [Spektral](https://danielegrattarola.github.io/spektral/) and slightly adapted so that we don't need to import the entire library just for two functions. Note that there's no need to JIT compile these two functions because they will run only once, and in fact, it is not guaranteed that compiling them will be less expensive than simply executing them with Python. Especially because both functions are heavily Numpy-based already, so they should run at C-like speed.
 
-Moving forward to implementing the actual system. Let's first define the fixed hyper-parameters that are involved in the system:
+Moving forward to implementing the actual system. Let's first define the fixed hyper-parameters of the model:
 
 ```python
 omega = 20               # Frequency of oscillations in rad/s
@@ -291,7 +291,7 @@ def evolve_system(z0, steps):
     return z
 ```
 
-I had originally wrapped the loop in a `tqdm` progress bar, but an old-fashioned `if` and `print` can reduce the overhead by 50% (2.29s vs. 1.23s, tested on a simple `for` loop with 1e7 iterations). Pre-computing `steps_in_percent` also helps bring down the overhead by 30% compared to computing it every time.  
+I had originally wrapped the loop in a `tqdm` progress bar, but an old-fashioned `if` and `print` can reduce the overhead by 50% (2.29s vs. 1.23s, tested on a simple `for` loop with 1e7 iterations). Pre-computing `steps_in_percent` also reduces the overhead by 30% compared to computing it every time.  
 (You'll notice that at some point it just became a matter of optimizing every possible aspect of this :D)
 
 The only thing left to do is to evolve the system starting from a given intial state:
@@ -343,6 +343,6 @@ After optimizing all that was optimizable, I tested the old code against the new
 Most of the improvement came from Numba and removing the overhead of Python's interpreter, but it must be said that the true core of the system is dealt with by Numpy. In fact, as we increase the number of nodes the bottleneck becomes the matrix multiplication in Numpy, eventually leading to virtually no performance difference between using Numba or not (verified for `N=1000` - the 31x speedup was for `N=2`). 
 
 <br>
-I hope that you learned something from this post, be it about models of the epileptic brain or Python optimization.
+I hope that you enjoyed this post and hopefully learned something new, be it about models of the epileptic brain or Python optimization.
 
 Cheers!

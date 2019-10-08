@@ -4,17 +4,19 @@ title: About
 image: /images/about/1.jpg
 ---
 
-I am a Ph.D. student in machine learning at Università della Svizzera Italiana (Lugano, Switzerland).
-My research focuses on predicting and controlling anomalies on graphs. 
+I am a Ph.D. student at Università della Svizzera Italiana (Lugano, Switzerland). 
+I research graph neural networks and their applications to systems that change over time.
 <br>
-I mostly work on graph neural networks, reinforcement learning, and epilepsy. 
+I am also the main developer of <a href="https://danielegrattarola.github.io/spektral">Spektral</a>, a library for graph deep learning in Keras. 
+<br>
+<br>
+Currently, I am at the Krembil Research Institute in Toronto, working with Dr. Valiante's <a href="http://www.neurontobrainlaboratory.ca">Neuron To Brain Lab</a> on the prediction and localization of epileptic seizures.
+<br>
+<br>
+I love coding, writing, traveling, food, art, cinema, reading, and plants.
 
 <br>
-<br>
-
-I like getting lost in nature, travelling around by bike, playing the guitar, and creating websites/pics/music.  
-<br>
-Power places: Eivissa | Kyōto | Queensland.
+Favourite places: Eivissa | Kyōto | Queensland.
 
 <br>
 <br>
@@ -35,17 +37,16 @@ Power places: Eivissa | Kyōto | Queensland.
             <img class="svg" src="/assets/icons/rss.svg" width="30" height="30">
         </a>
     </span>
-    <br><a target="_blank" href="/files/Daniele_Grattarola_resume.pdf">Résumé</a>
-    <br><span style='font-size: 14px;'>ETH: <a href="0x8c4641e3EEdd08D5975cb2B5c67650eeD6B03656">0x8c4641e3EEdd08D5975cb2B5c67650eeD6B03656</a></span>
 </center>
 
 <br>
 
 <center class="image-grid">
-    <img src="/images/about/1.jpg" style="grid-column: 1 / span 2;">
-    <img src="/images/about/2.jpg" style="grid-column: 1; overflow:hidden;">
-    <img src="/images/about/3.jpg" style="grid-column: 2;">
-    <img src="/images/about/4.jpg" style="grid-column: 1 / span 2;">
+    <img src="/images/about/1.jpg" style="grid-column: 1 / span 2;" title="Île Saint-Louis, Paris, France">
+    <img src="/images/about/2.jpg" style="grid-column: 1; overflow:hidden;" title="Heart Reef, Whitsundays, Australia">
+    <img src="/images/about/3.jpg" style="grid-column: 2;" title="Es Vedrà, Ibiza, Spain">
+    <img src="/images/about/4.jpg" style="grid-column: 1 / span 2;" title="Fushimi Inari-taisha, Kyoto, Japan">
+    <img src="/images/about/5.jpg" style="grid-column: 1 / span 2;" title="3D TORONTO sign, Toronto, Canada">
 </center>
 
 <!-- SVG-->
