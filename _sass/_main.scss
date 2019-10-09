@@ -457,6 +457,7 @@ h1 {
 /*--- MATHJAX ----------------------------------------------------------------*/
 
 .MathJax_Display {
-    overflow-x: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
