@@ -1,3 +1,3 @@
-# Daniele Grattarola's Personal Blog
+# blog.ppl.vc
 
-Live version @ [danielegrattarola.github.io](https://danielegrattarola.github.io)
+Based on @ [danielegrattarola.github.io](https://danielegrattarola.github.io)
